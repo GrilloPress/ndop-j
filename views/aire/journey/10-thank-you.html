@@ -1,0 +1,40 @@
+{% set title = 'Thank you' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/10-thank-you.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p class="alert alert-success" role="alert" style="display:none;" tabindex="-1">Your preferences have been saved.</p>
+              <p>
+                It can take up to 21 days before your decision can be applied to future data releases leaving the NHS. Your preferences will be applied gradually across all organisations that use patient health information.
+              </p>
+              <p>
+                Your preferences will be acknowledged by <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">other organisations that use health and social care information by March 2020</a>.
+              </p>
+              <p>
+                You can reset your preferences at any time in the future using this service.
+              </p>
+              <p>
+                <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/journey/index">Return to start &olarr;</a>
+              </p>
+            </div>
+          </div>
+      </div>
+  </div>
+</main>
+{% endblock %}

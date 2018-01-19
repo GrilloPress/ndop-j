@@ -1,0 +1,108 @@
+{% set title = 'Prototype Calder' %}
+{% set PROTOTYPE_URL = 'calder' %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+
+  <nav aria-label="Breadcrumb">
+    <ol class="list--breadcrumb">
+      <li><a href="/">Index</a></li>
+      <li>{{title}}</li>
+    </ol>
+  </nav>
+
+    <div class="local-header">
+      <h1 class="local-header__title">{{title}}</h1>
+      <div class="local-header__intro">
+        <div class="reading-width">
+          <p>November 2017</p>
+        </div>
+      </div>
+    </div>
+
+    <p>This Prototype was created in response in response to user feedback in Lab 6 and UserZoom testing on Prototype F and Production</p>
+
+    <p>
+      It explores how to best provide users with an understanding of the service journey they are about to embark on
+    </p>
+
+    <a role="button" class="button" href="/{{PROTOTYPE_URL}}/01-overview">Start Prototype v1</a>
+    <hr>
+    <h2 id="prototype-sections">Prototype sections</h2>
+    <div class="grid-row">
+      <div class="column--one-half">
+        <h3>Pages</h3>
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-half">
+        <h3>App and related pages</h3>
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/v1">Start v1</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/v1-confirm-who-you-are">
+              Confirm who you are v1
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/end">
+              End journey
+            </a>
+            <br />
+          </li>
+
+        </ol>
+        <h3>Alternatives</h3>
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        <h2 id="design-hypotheses">Design hypotheses</h2>
+        <h3 class="header-hypothesis">Confirm your details interstitial</h3>
+        <p>
+          In user labs and UserZoom testing, some users didn't understand the following steps of the service nor why they were being asked to submit personal identifiable data.
+        </p>
+        <p>
+          <strong>If</strong> we provide a detailed journey on the service start page <br />
+          <strong>Then</strong> users will better understand why they are being asked for personal data <br />
+          <strong>Because</strong> it will be clearer why that data is being used and what role it plays in verifying the user
+        </p>
+        <p>
+          <strong>If</strong> we provide a detailed journey on the service start page <br />
+          <strong>Then</strong> users the next steps to opt-out <br />
+          <strong>Because</strong> it will be clearer what the user needs to do before they can opt-out
+        </p>
+      </div>
+    </div>
+
+    <a role="button" class="button" href="/{{PROTOTYPE_URL}}/01-overview">Start Prototype</a>
+
+  </div>
+</main>
+{% endblock %}

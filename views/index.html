@@ -1,0 +1,93 @@
+{% set title = 'Register your preferences for sharing health data' %}
+{% block scripts %}
+
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+    <div class="local-header">
+      <h1 class="local-header__title">{{title}}</h1>
+      <div class="local-header__intro">
+        <p>Homepage for H series {{title}} prototypes.</p>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        <div class="callout callout--attention">
+          <h2>Stable</h2>
+          <h3>
+            <a title="Prototype H Summary Page - {{ title }}" href="/H/index">Prototype H</a>
+          </h3>
+          <p>
+            Landing page for Prototype H series
+          </p>
+          <p><a title="Start Prototype H - {{ title }}" role="button" class="button" href="/H/01-overview">Start Prototype H</a></p>
+        </div>
+
+        <div class="callout">
+          <h3>
+            <a title="Prototype H Summary Page - {{ title }}" href="/H/index">Prototype H</a>
+          </h3>
+          <p>
+            Landing page for Prototype H series
+          </p>
+          <p><a title="Start Prototype H - {{ title }}" role="button" class="button" href="/H/01-overview">Start Prototype H</a></p>
+        </div>
+        <div class="callout">
+          <h3>
+            <a title="Prototype Aire Summary Page - {{ title }}" href="/aire/index">Prototype Aire</a>
+          </h3>
+          <p>
+            Landing page for Prototype Aire series
+          </p>
+          <p>
+            Provides users with an extended screener before verification as well as an FAQ page before the set your preference page.
+          </p>
+          <p><a title="Start Prototype Aire - {{ title }}" role="button" class="button" href="/aire/01-overview">Start Prototype Aire</a></p>
+        </div>
+        <div class="callout">
+          <h3>
+            <a title="Prototype Spen Summary Page - {{ title }}" href="/spen/index">Prototype Spen</a>
+          </h3>
+          <p>
+            Landing page for Prototype Spen series
+          </p>
+          <p>
+            Explores preference viewing for returning users
+          </p>
+          <p><a title="Start Prototype Spen - {{ title }}" role="button" class="button" href="/spen/index">Start Prototype Spen</a></p>
+        </div>
+        <div class="callout">
+          <h3>
+            <a title="Prototype Calder Summary Page - {{ title }}" href="/calder/index">Prototype Calder</a>
+          </h3>
+          <p>
+            Landing page for Prototype Calder series
+          </p>
+          <p>
+            Explores a more extensive service start page pattern
+          </p>
+          <p><a title="Start Prototype calder - {{ title }}" role="button" class="button" href="/calder/index">Start Prototype Calder</a></p>
+        </div>
+      </div>
+
+      <div class="column--one-third">
+        <div class="callout callout--muted">
+          <h2 class="h3">Recent prototypes</h2>
+          <ul class="link-list">
+            <li>
+              <a href="https://ndop-g.herokuapp.com/">Prototype G</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</main>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% set title = 'Set your preference' %}
+{% set PROTOTYPE_URL = 'spen' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/A02-set-your-preference.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/A01-opt-out-process">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <h1 class="page-title">{{title}}</h1>
+
+      <div class="grid-row">
+        <div class="column--three-quarters">
+          <div class="reading-width">
+            <p class="alert alert-info" role="alert" style="display:none;" tabindex="-1">
+              Your current preference is set to <strong id="preference">not share</strong> your data
+            </p>
+            <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+              <h2 class="h3" id="error-summary">Please indicate your data sharing preferences to continue</h2>
+              <ul class="link-list" id="link-to-errors">
+              </ul>
+            </div>
+
+            <form class="form" action="javascript:confirmAll();">
+                <div id="single-question" class="form-group form-row util-no-margin">
+                  <h2 class="h3">I want to stop sharing my data beyond my individual care</h2>
+                  <div id="single-question-input-error" class="error error-message">
+                    <p class="error-text">Please select your preference</p>
+                  </div>
+                  <input type="radio" name="single-pref" id="single-opted-out" value="single-opted-out" class="form-label form-label--radio">
+                  <label for="single-opted-out" class="form-label form-label--radio multiple-choice--radio">
+                    Yes
+                  </label>
+                  <input type="radio" name="single-pref" id="single-opted-in" value="single-opted-in" class="multiple-choice--radio">
+                  <label for="single-opted-in" class="form-label form-label--radio multiple-choice--radio">
+                    No
+                  </label>
+                </div>
+              <input id="submit-pref" class="button" type="submit" name="submit-pref" value="Continue">
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,129 @@
+{% set title = 'Confirm who you are' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <div class="reading-width">
+                <p>
+                  For security reasons we must verify who you are before you can set your preferences.
+                </p>
+                <p>
+                  To do this you must complete the following verification steps
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="step-container step-card-container-thirds">
+    <div class="page-section">
+          <div class="grid-row shadow">
+
+            <div id="step-enter-your-details 1" class="step first">
+              <div class="">
+                <div class="column--card-step-counter">
+                  <div>
+                    1
+                  </div>
+                </div>
+                <div class="column--card-step-body-with-icon">
+                  <h3>Enter your details</h3>
+                  <div class="grid-row">
+                    <div class="column--full">
+                      <img class="marketing-icon" alt="check your details icon" src="/images/search_for_your_details.png">
+                    </div>
+                  </div>
+                  <p>
+                    Tell us your name, date of birth, postcode and NHS number. We will use these details to find your contact information in our patient database.
+                  </p>
+                  <p>
+                    The information you provide will not be saved.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="step-choose-your-contact-method" class="step">
+              <div class="">
+                <div class="column--card-step-counter">
+                  <div>
+                    2
+                  </div>
+                </div>
+                <div class="column--card-step-body-with-icon">
+                  <h3>Choose your contact method</h3>
+                  <div class="grid-row">
+                    <div class="column--full">
+                      <img class="marketing-icon" alt="check your details icon" src="/images/text_with_code.png">
+                    </div>
+                  </div>
+                  <p>
+                    Using the details we hold in our database, we will send you a one-time verification code to your selected contact method.
+                  </p>
+                  <p>
+                    This will be your mobile number or email address.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div id="step-enter-your-security-code" class="step last">
+              <div class="">
+                <div class="column--card-step-counter">
+                  <div>
+                    3
+                  </div>
+                </div>
+                <div class="column--card-step-body-with-icon">
+                  <h3>Enter your security code</h3>
+                  <div class="grid-row">
+                    <div class="column--full">
+                      <img class="marketing-icon" src="/images/padlock_small.png" alt="how your data is kept secure icon">
+                    </div>
+                  </div>
+                  <p>
+                    Enter your verification code online to prove your identity.
+                  </p>
+                  <p>
+                    When your code is verified, you will be able to set your preference online.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <div class="grid-row">
+          <div class="column--three-quarters">
+            <p>
+              By continuing you agree to let us search for your details in our database to send you a one-time security passcode.
+            </p>
+            <p>
+              <a href="/{{PROTOTYPE_URL}}/journey/04-your-details" class="button" role="button">Agree and continue</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</main>
+{% endblock %}

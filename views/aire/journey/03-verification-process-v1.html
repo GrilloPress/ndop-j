@@ -1,0 +1,109 @@
+{% set title = 'Confirm who you are' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <div class="reading-width">
+                <p>
+                  For security reasons we must verify who you are before you can set your preferences.
+                </p>
+                <p>
+                  To do this you must complete the following verification steps
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+      <div class="page-section">
+        <div class="reading-width">
+          <div class="process-header">
+            <h2 class="h3" id="how-the-opt-out-process-works">Verification process</h2>
+          </div>
+
+
+          <div class="grid-row">
+            <div class="column--one-third">
+              <div class="card">
+                <h3 class="h4">1. Check your details</h3>
+                <div class="grid-row">
+                  <div class="column--two-thirds">
+                    <img class="marketing-icon" alt="check your details icon"  src="/images/verify-icon.png" />
+                  </div>
+                  <div class="column--one-third">
+                    <img class="next-icon-right" alt="next step indicator" src="/images/next-icon.png" />
+                  </div>
+                </div>
+                <p class="marketing-icon-text">You enter your details and we look for your contact information in our patient database.</p>
+              </div>
+            </div>
+
+            <div class="column--one-third">
+              <div class="card">
+                <h3 class="h4">2. Confirm your identity</h3>
+                <div class="grid-row">
+                  <div class="column--two-thirds">
+                    <img class="marketing-icon" alt="check your details icon" src="/images/verification-method-icon.png" />
+                  </div>
+                  <div class="column--one-third">
+                    <img class="next-icon-right" alt="next step indicator" src="/images/next-icon.png" />
+                  </div>
+                </div>
+                <p class="marketing-icon-text">We send a verification code to your selected contact method and you enter this online.</p>
+              </div>
+            </div>
+
+            <div class="column--one-third">
+              <div class="card">
+                <h3 class="h4">3. Set your preferences</h3>
+                <div class="grid-row">
+                  <div class="column--two-thirds">
+                    <img class="marketing-icon" alt="check your details icon" src="/images/choice-icon.png" />
+                  </div>
+                  <div class="column--one-third">
+
+                  </div>
+                </div>
+                <p class="marketing-icon-text">You confirm your data sharing preferences, which will be applied within 21 days.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <div class="page-section">
+      <div class="reading-width">
+        <div class="grid-row">
+          <div class="column--three-quarters">
+            <p>
+              By continuing you agree to let us search for your details in our database to send you a one-time security passcode.
+            </p>
+            <p>
+              <a href="/{{PROTOTYPE_URL}}/journey/04-your-details" class="button" role="button">Agree and continue</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</main>
+{% endblock %}

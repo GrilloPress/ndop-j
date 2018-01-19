@@ -1,0 +1,442 @@
+// EXAMPLE WITHOUT ICONS
+// <div class="step-container">
+//  <div id="step-check-your-details" class="step">
+//    <div class="grid-row">
+//      <div class="column--step-counter">
+//        <div>
+//          1
+//        </div>
+//      </div>
+//      <div class="column--step-body">
+//        <h3>Check your details</h3>
+//        <p>
+//          You enter your details and we look for your contact information in our patient database.
+//        </p>
+//        <p>
+//          The information you provide will not be saved.
+//        </p>
+//      </div>
+//    </div>
+//  </div>
+// </div>
+//
+// EXAMPLE WITH ICONS
+// <div class="step-container">
+//  <div id="step-check-your-details" class="step">
+//    <div class="grid-row">
+//      <div class="column--step-counter">
+//        <div>
+//          2
+//        </div>
+//      </div>
+//      <div class="column--step-body-with-icon">
+//        <h3>Check your details</h3>
+//        <p>
+//          You enter your details and we look for your contact information in our patient database.
+//        </p>
+//        <p>
+//          The information you provide will not be saved.
+//        </p>
+//      </div>
+//      <div class="column--step-counter">
+//        <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
+//      </div>
+//    </div>
+//
+//  </div>
+// </div>
+
+.step-container {
+
+  padding: 1em 0;
+
+  &.grey {
+
+    background-color: #E8EDEE;
+  }
+
+  &.blue {
+
+    background-color: #f0f8ff;
+    border-top: 1px solid darken( #f0f8ff, 5% );
+    border-bottom: 1px solid darken( #f0f8ff, 4% );
+  }
+
+  &.no-margin {
+
+    margin-top: 0;
+  }
+
+  h2 {
+
+    margin: 0.5em 0 1.5em 0;
+  }
+
+  .shadow {
+
+    -webkit-box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
+    -moz-box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
+    box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
+  }
+}
+
+.step {
+
+  // one-fifth column that floats left on mobile
+  .column--step-counter {
+
+    @extend .column--one-sixth;
+
+    &.offset {
+
+      @include media(desktop) {
+
+        margin-left: -16%;
+      }
+    }
+
+    div {
+
+      background: $nhs-blue;
+      color: #ffffff;
+      font-size: 32px;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      line-height: 56px;
+      text-align: center;
+      margin: auto;
+
+    }
+
+
+  }
+
+  .column--step-body {
+
+    @extend .column--five-sixes;
+
+    @include media(mobile) {
+
+      float: left;
+      max-width: 75%;
+    }
+
+    @include media(tablet) {
+
+      float: left;
+      max-width: 80%;
+    }
+
+    h2, h3 {
+
+      @include media(desktop) {
+
+        margin-top: 18px;
+      }
+
+    }
+
+    &.action {
+
+      @include media(desktop) {
+
+        margin-left: 16.66%;
+      }
+
+    }
+
+
+  }
+
+  .column--step-body-with-icon {
+
+    @extend .column--four-sixes;
+
+    @include media(mobile) {
+
+      float: left;
+      max-width: 70%;
+    }
+
+    @include media(tablet) {
+
+      float: left;
+      max-width: 80%;
+    }
+
+    h2, h3 {
+
+      @include media(desktop) {
+
+        margin-top: 18px;
+      }
+
+    }
+
+
+  }
+
+  .column--step-icon {
+
+    @extend .column--one-sixth;
+    @include media(mobile) {
+
+      float: left;
+      max-width: 30%;
+
+    }
+
+    @include media(tablet) {
+
+      float: left;
+      max-width: 20%;
+
+    }
+
+    img {
+
+      margin-top: 32px;
+    }
+
+  }
+
+}
+
+
+.step-card-container {
+
+  padding: 0;
+
+  h2 {
+
+    margin: 0;
+    padding: 28px;
+    border: 1px solid darken( #E8EDEE, 10% );
+    border-radius: 5px 5px 0 0;
+    font-size: 28px;
+
+  }
+
+  .step {
+
+    margin-top: 0px;
+    border: 1px solid darken( #E8EDEE, 10% );
+    padding: 32px 16px;
+
+    &.first {
+
+      border-radius: 5px 5px 0 0;
+    }
+
+    &.last {
+
+      border-radius: 0 0 5px 5px;
+    }
+
+    .column--card-step-body-with-icon {
+
+      @include media(mobile) {
+
+        float: left;
+        max-width: 70%;
+      }
+
+      h2, h3 {
+
+        @include media(desktop) {
+
+          margin-top: 18px;
+        }
+
+      }
+      @extend .column--three-fifths;
+    }
+
+    .column--card-step-body {
+
+      @extend .column--four-fifths;
+
+      @include media(mobile) {
+
+        float: left;
+        max-width: 75%;
+      }
+
+      h2, h3 {
+
+        @include media(desktop) {
+
+          margin-top: 18px;
+        }
+
+      }
+
+      &.action {
+
+        @include media(desktop) {
+
+          margin-left: 16.66%;
+        }
+
+      }
+
+
+    }
+
+    .column--card-step-icon {
+
+      @include media(mobile) {
+
+        float: left;
+        max-width: 70%;
+        padding-left: 26%;
+      }
+
+      img {
+
+        margin-top: 32px;
+      }
+      @extend .column--one-fifth;
+    }
+
+    .column--card-step-counter {
+
+      @include media(mobile) {
+
+        float: left;
+        max-width: 24%;
+      }
+
+      div {
+
+        background: $nhs-blue;
+        color: #ffffff;
+        font-size: 32px;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        margin: auto;
+
+      }
+      @extend .column--one-sixth;
+    }
+
+  }
+
+}
+
+.step-card-container-thirds {
+
+  padding: 0;
+
+  h2 {
+
+    margin: 0;
+    padding: 28px;
+    border: 1px solid darken( #E8EDEE, 10% );
+    border-radius: 5px 5px 0 0;
+    font-size: 28px;
+
+  }
+
+  .step {
+
+    margin-top: 0px;
+    padding: 32px 16px;
+    border: 1px solid darken( #E8EDEE, 10% );
+    @extend .column--one-third;
+    @include media(desktop) {
+
+      min-height: 740px;
+
+    }
+
+    &.first {
+
+      border-radius: 5px 0 0 5px;
+      @include media(mobile) {
+
+        border-radius: 0;
+      }
+    }
+
+    &.last {
+
+      border-radius: 0 5px 5px 0;
+      @include media(mobile) {
+
+        border-radius: 0;
+      }
+    }
+
+    img {
+
+      display: block;
+      margin: auto;
+      width: 200px;
+      height: auto;
+
+    }
+
+    .column--card-step-body-with-icon {
+
+      h2, h3 {
+
+        text-align: center;
+
+        @include media(desktop) {
+
+          margin-top: 18px;
+          font-size: 20px;
+        }
+
+      }
+
+    }
+
+    .column--card-step-icon {
+
+      @include media(mobile) {
+
+        // float: left;
+        // max-width: 70%;
+        // padding-left: 26%;
+      }
+
+      img {
+
+        margin-top: 32px;
+      }
+
+    }
+
+    .column--card-step-counter {
+
+      @include media(mobile) {
+
+        // float: left;
+        // max-width: 24%;
+      }
+
+      div {
+
+        background: $nhs-blue;
+        color: #ffffff;
+        font-size: 32px;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        margin: auto;
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,33 @@
+{% set title = 'Your current preference' %}
+{% set PROTOTYPE_URL = 'spen' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/C02-your-current-preference.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/C01-opt-out-process">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+
+              <h2 id="your-preference" class="h3">Your preference</h2>
+
+               <a href="/{{PROTOTYPE_URL}}/C03-set-your-preference" class="button">Edit your preference</a>
+               <a href="/{{PROTOTYPE_URL}}/C0X-exit-without-save" class="button button--secondary" role="button">Exit</a>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

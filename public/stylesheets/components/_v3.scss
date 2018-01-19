@@ -1,0 +1,114 @@
+.v3 {
+
+  .marketing-section {
+
+    padding: 2em 0;
+
+    &.top {
+
+      margin-top: 2em;
+    }
+  }
+
+  .marketing-section-grey {
+
+    background-color: #E8EDEE;
+  }
+
+  hr {
+
+    background-color: $nhs-blue;
+  }
+
+  .button-wire {
+
+      font-family: "Frutiger W01", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid;
+        border-radius: 2px;
+        cursor: pointer;
+        display: inline-block;
+        letter-spacing: .5px;
+        line-height: 1.25;
+        outline: 1px solid transparent;
+        outline-offset: -1px;
+        padding: 12px 24px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        color: $blue;
+        width: auto;
+
+        &:before {
+
+          background: transparent;
+          content: "";
+          display: block;
+          height: 110%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+      }
+
+      &:hover {
+
+        $button-wire-hover-color: darken($blue, 10%);
+        color: $button-wire-hover-color;
+        border-color: $button-wire-hover-color;
+
+      }
+
+  }
+
+  .marketing-icon-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include media(desktop) {
+      min-height: 64px;
+    }
+  }
+
+  .marketing-icon-header * {
+    padding: 2px;
+  }
+
+  .marketing-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .next-icon-right {
+    @include media(desktop) {
+      margin-top: 150px;
+      display: block;
+    }
+    @include media($max-width: 924px) {
+      display: none;
+    }
+  }
+
+  .marketing-icon-text {
+    text-align: left;
+    @include media(desktop) {
+    }
+  }
+}
+
+.process-one {
+  color: $bright-blue;
+}
+.process-two {
+  color: $blue;
+}
+.process-three {
+  color: $dark-blue;
+}

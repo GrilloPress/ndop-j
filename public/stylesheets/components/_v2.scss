@@ -1,0 +1,108 @@
+.v2 {
+
+  .marketing-section {
+
+    padding: 2em 0;
+
+
+    &.top {
+
+      padding: 0 0 2em 0;
+      @include media(desktop) {
+
+        margin-top: 0;
+
+      }
+
+    }
+
+  }
+
+  .image-marketing {
+
+    &.desktop {
+
+      display: none;
+
+      @include media(desktop) {
+        display: block;
+        margin: 3em 0;
+      }
+
+    }
+
+    &.mobile {
+
+      display: none;
+
+      @include media(mobile) {
+
+        display: block;
+        float: right;
+        width: 50%;
+        margin: 1em 0;
+
+      }
+
+
+    }
+
+  }
+
+  .marketing-section-grey {
+
+    background-color: #E8EDEE;
+  }
+
+  hr {
+
+    background-color: $nhs-blue;
+  }
+
+  .button-wire {
+
+      font-family: "Frutiger W01", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid;
+        border-radius: 2px;
+        cursor: pointer;
+        display: inline-block;
+        letter-spacing: .5px;
+        line-height: 1.25;
+        outline: 1px solid transparent;
+        outline-offset: -1px;
+        padding: 12px 24px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        color: $blue;
+        width: auto;
+
+        &:before {
+
+          background: transparent;
+          content: "";
+          display: block;
+          height: 110%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+      }
+
+      &:hover {
+
+        $button-wire-hover-color: darken($blue, 10%);
+        color: $button-wire-hover-color;
+        border-color: $button-wire-hover-color;
+
+      }
+
+  }
+}

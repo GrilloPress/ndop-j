@@ -1,0 +1,123 @@
+{% set title = 'Who uses your data - Register your preferences for sharing health data' %}
+{% set content_title = "Who uses your data" %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="page-title">{{content_title}}</h1>
+
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+          </li>
+          <li>{{content_title}}</li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-third">
+        <ol start="4">
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>
+                The NHS collects health and care data from a wide variety of NHS trusts, local authorities and independent sector groups. Research bodies and organisations can request access to this data. They must meet strict conditions and criteria in order to be considered.
+              </p>
+              <p>
+                Personally identifiable data may only be released if it is used to support the delivery of health and social care services in England or if required by law. The request will be rejected if this is not the case. Third party marketing or insurance companies will not be given access to your data, unless you specifically request us to do so.
+              </p>
+              <p>
+                Organisations that can request access to data may include:
+              </p>
+              <ul>
+                <li>
+                  university researchers
+                </li>
+                <li>
+                  hospital researchers
+                </li>
+                <li>
+                  royal colleges
+                </li>
+              </ul>
+              <h3>Legal agreements</h3>
+              <p>
+                Before any data can be used, a signed data sharing agreement must be in place between the NHS and the organisation requesting information. This states the rules on what an organisation can do with shared data.
+              </p>
+              <p>
+                An agreement for data sharing will include:
+              </p>
+              <ul>
+                <li>
+                  the type of data being shared
+                </li>
+                <li>
+                  the purpose for sharing data
+                </li>
+                <li>
+                  a date for when data must be destroyed
+                </li>
+                <li>
+                  all other data security conditions
+                </li>
+              </ul>
+              <h2 id="type-of-information-we-share">Type of information we share</h2>
+              <p>
+                Your gender, date of birth and postcode are shared along with your health information. If you decide to opt-out of sharing your personally identifiable data, we will not share your name or any details that can match you personally to your medical records.
+              </p>
+              <h3>Further information</h3>
+              <ul class="link-list">
+                <li>
+                  <a href="https://understandingpatientdata.org.uk/">More information on patient data sharing</a>
+                </li>
+                <li>
+                  <a href="http://content.digital.nhs.uk/article/4981/Information-requests-from-organisations">More details on information requests</a>
+                </li>
+                <li>
+                  <a href="http://content.digital.nhs.uk/article/4963/What-we-collect">More details on the data we collect </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          {{ patterns.page_nav( "Overview", "/" + PROTOTYPE_URL + "/01-overview", "How data is kept secure", "/" + PROTOTYPE_URL + "/03-how-data-is-kept-secure" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

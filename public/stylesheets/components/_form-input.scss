@@ -1,0 +1,45 @@
+input[type='text'],
+input[type='number'],
+input[type='tel'],
+input[type='email'],
+input[type='password'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: block; // Remove margin under textarea in Chrome and FF
+  width: 100%;
+  margin: $base-font-size/2 0 $base-font-size 0;
+  padding: $base-font-size/2;
+  border: 2px solid $nhs-blue;
+  font-family: inherit;
+  font-size: inherit;
+  @include bold-font(20);
+  line-height: $base-font-size*2;
+
+  @include media(mid) {
+    width: 75%;
+    margin: $base-font-size 0 $base-font-size*2 0;
+  }
+
+  &:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 5px $focus-colour;
+    -moz-box-shadow: 0 0 0 5px $focus-colour;
+    box-shadow: 0 0 0 5px $focus-colour;
+  }
+
+  &.-small {
+    @include media($site-width) {
+      width: 11.5em;
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

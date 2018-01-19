@@ -1,0 +1,136 @@
+{% set title = 'Benefits of data sharing - Register your preferences for sharing health data' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% set content_title = "Benefits of data sharing" %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="page-title">{{content_title}}</h1>
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-third">
+        <ol start="4">
+          <li>
+            {{content_title}}
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <div class="grid-row">
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/improve-individual-care.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Improve individual care</h3>
+                  </div>
+                </div>
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/learn-more.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Learn more about diseases</h3>
+                  </div>
+                </div>
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/quicker-diagnoses.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Make quicker diagnoses</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/new-treatments.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Develop new treatments</h3>
+                  </div>
+                </div>
+
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/prevent-illness.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Prevent serious illness</h3>
+                  </div>
+                </div>
+
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/plan-services.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Plan NHS health services</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/patient-safety.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Improve patient safety</h3>
+                  </div>
+                </div>
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/evaluate-policy.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Evaluate NHS policy</h3>
+                  </div>
+                </div>
+                <div class="column--one-third">
+                  <div>
+                    <img src="/images/length-of-stay.png" height="70" width="auto" alt="">
+                    <h3 class="h4">Reduce length of stay</h3>
+                  </div>
+                </div>
+              </div>
+              <h3>Research</h3>
+              <p>Your patient data can be used in research to improve treatment for serious illnesses and conditions. This information can also be used to find cures for diseases like diabetes and cancer. Without this data research, we are unable to develop our understanding or improve our services for the future.</p>
+              <h3>Planning</h3>
+              <p>Patient data can also be used to manage and prepare health and social care services in England. With this information the NHS can plan where to place essential services, like heart units and specialist care wards.</p>
+          </div>
+          <div class="column--one-third">
+
+          </div>
+      </div>
+  </div>
+</div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          {{ patterns.page_nav( "How data is kept secure", "/" + PROTOTYPE_URL + "/03-how-data-is-kept-secure", "How-opting-out-works", "/" + PROTOTYPE_URL + "/05-how-opting-out-works" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

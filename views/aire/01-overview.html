@@ -1,0 +1,105 @@
+{% set title = 'Overview - Register your preferences for sharing health data' %}
+{% set content_title = "Overview" %}
+{% set PROTOTYPE_URL = 'aire'%}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="page-title">{{content_title}}</h1>
+
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>{{content_title}}</li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+        </ol>
+            </div>
+            <div class="column--one-third">
+              <ol start="4">
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+                </li>
+              </ol>
+            </div>
+      </div>
+  </div>
+
+<div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>
+                Whenever you visit an NHS service, care professionals must keep records about you. These may be electronic, paper or a mixture of both. Your records contain your health and care information.
+              </p>
+              <p>
+                The NHS may use this personally identifiable data in two different ways. The first reason for sharing is for your own individual care. This allows health and care professionals, like doctors and dentists, to see your important medical and care details.
+              </p>
+              <h2 class="h3" id="the-second-reason">The second reason</h2>
+              <p>
+                The second reason for sharing is to help the NHS research, plan and improve health and social care services for you and your family.
+              </p>
+              <p>
+                This helps the NHS:
+              </p>
+              <ul>
+                <li>
+                  plan essential facilities like heart units
+                </li>
+                <li>
+                  understand the need for specialist care wards
+                </li>
+                <li>
+                  research potential cures for life-threatening diseases
+                </li>
+                <li>
+                  improve treatment for serious illnesses
+                </li>
+              </ul>
+              <h2 class="h3" id="the-second-reason">Your preferences</h2>
+              <p>
+                By sharing your data you can contribute to the health of future generations. However, if you don't agree with using your data for research and/or planning purposes, you can opt-out of this.
+              </p>
+
+              <p>
+                The decision you make will not affect your individual care.
+              </p>
+              <p>
+                <a title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/journey/index">Register your preference</a> or continue reading for more information.
+              </p>
+            </div>
+          </div>
+      </div>
+</div>
+
+<div class="page-section">
+  <div class="reading-width">
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        {{ patterns.page_nav( "", "", "Who uses your data", "/" + PROTOTYPE_URL + "/02-who-uses-your-data" ) }}
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+{% endblock %}

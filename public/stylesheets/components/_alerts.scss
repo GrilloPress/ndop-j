@@ -1,0 +1,22 @@
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+@import "../units/heading";
+@import "../units/paragraph";
+
+.alert {
+
+  padding: 12px;
+
+  &.alert-success {
+
+    border: 1px solid $green;
+    background-color: #F5FFFA; //super pale, contrast of AAA 15.96:1
+  }
+
+
+  &.alert-info {
+
+    border: 1px solid $blue;
+    background-color: lighten( $blue, 60% ); //super pale, contrast of AAA 14.78:1
+  }
+}

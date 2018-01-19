@@ -1,0 +1,56 @@
+{% set title = 'Register your preferences for sharing patient health data' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/02-NHS-number.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">Your NHS Number</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>
+                Your NHS number is a unique identifier for you as a patient. You will need access to it to use this service.
+              </p>
+              <p>
+                An NHS number is a 10 digit number, like 485 777 3456.
+              </p>
+            <h2 class="h3">Do you have your NHS number?</h2>
+              <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+                <h3 class="h4" id="error-summary">Please indicate if your NHS number</h3>
+                <ul class="link-list" id="link-to-errors">
+                </ul>
+              </div>
+              <form class="form" action="javascript:confirmAll();">
+                  <div id="NHS-number-question" class="form-group form-row util-no-margin">
+                    <div id="NHS-number-question-input-error" class="error error-message">
+                      <p class="error-text">Please make a selection to contiune</p>
+                    </div>
+                    <input type="radio" name="NHS-number-pref" id="true" value="true" class="form-label form-label--radio">
+                    <label for="true" class="form-label form-label--radio multiple-choice--radio">
+                      I have my NHS number
+                    </label>
+                    <input type="radio" name="NHS-number-pref" id="false" value="false" class="multiple-choice--radio">
+                    <label for="false" class="form-label form-label--radio multiple-choice--radio">
+                      I do not know my NHS number or where to find it
+                    </label>
+                  </div>
+                <input id="submit-pref" class="button" type="submit" name="submit-pref" value="Continue">
+              </form>
+
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

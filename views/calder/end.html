@@ -1,0 +1,37 @@
+{% set title = 'End of journey' %}
+{% set PROTOTYPE_URL = 'calder' %}
+{% block scripts %}
+<script src="/javascripts/radio-checkbox.js"></script>
+<script src="/javascripts/{{PROTOTYPE_URL}}/01-confirm-who-you-are.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <div class="reading-width">
+                <p>
+                  This is just a prototype.
+                </p>
+                <p>
+                  <a href="/{{PROTOTYPE_URL}}/index" class="button-wire" role="button">Return to start &olarr;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

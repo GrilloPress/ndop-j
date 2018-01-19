@@ -1,0 +1,51 @@
+{% set title = 'Enter your code' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/06-enter-your-code.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <h1 class="page-title stepper">{{title}} <small>Step 3 of 3</small></h1>
+      <div class="grid-row">
+        <div class="column--three-quarters">
+            <p class="alert alert-success" role="alert" style="display:none;" tabindex="-1">
+              Your code has been successfully sent!
+            </p>
+            <p id="resend-notice" style="display:none;">We’ve resent your code to your chosen option. The code will expire in 15 minutes. Do not close this browser window or your code will also expire.</p>
+
+            <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+              <h2 id="error-summary" class="h3">To use this online service, enter your code</h2>
+              <ul class="link-list">
+                <li>
+                  <a class="error-text" href="#code-input">No code was provided</a>
+                </li>
+              </ul>
+            </div>
+
+          <form class="form">
+            <div class="form-group form-row">
+              <label class="form-label" for="code-input">Enter the code received on your mobile or email</label>
+              <div id="code-input-error" class="error error-message">
+                <p class="error-text error-label">Enter your code below</p>
+                <br />
+              </div>
+              <input id="code-input" class="-small form-control" type="number">
+              <p>Didn't receive your code? <a id="resend-code" href="javascript:void(0);" onclick="resendCode()">Resend code</a></p>
+              <input type="button" class="button" value="Submit" onclick="submitCode()" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

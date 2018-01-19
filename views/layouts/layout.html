@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  {% include "partials/_header.html" %}
+  {% import "partials/_macros.html" as patterns %}
+  {% block scripts %}{% endblock %}
+</head>
+<body class="{% if PROTOTYPE_URL %}{{ PROTOTYPE_URL }}{% endif %}">
+  <div class="skiplinks">
+    <div class="skiplinks__inner">
+      <a href="#content" class="skiplinks__link">Skip to main content</a>
+    </div>
+  </div>
+
+  <div class="banner alpha">
+    <div class="page-section">
+      <span>ALPHA</span> This service is not live. It is being tested.
+    </div>
+  </div>
+
+  <header role="banner">
+    <div class="global-header">
+      <div class="global-header__inner">
+        <a href="#" class="global-header__link">
+            <img src="/images/logotype-nhs-mono.png" alt="NHS">
+          </a>
+      </div>
+    </div>
+  </header>
+    {% block body %}{% endblock %}
+    {% include "partials/_footer.html" %}
+    {% include "partials/_analytics.html" %}
+  </body>
+</html>

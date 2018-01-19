@@ -1,0 +1,117 @@
+// Checkbox
+
+.multiple-choice--checkbox {
+  // position: absolute; // take it out of document flow
+  // opacity: 0; // hide it
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    @include bold-font(20);
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 34px;
+    height: 34px;
+    background: white;
+    border: 3px solid $blue;
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 5px $yellow;
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: white;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: $grey-2;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: $grey-3;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: "";
+    border: solid;
+    border-width: 0 0 5px 5px;
+    background: transparent;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    zoom: 1;
+    filter: alpha(opacity=0);
+  }
+}
+
+// Radio Buttons
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    line-height: 17px;
+    display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 34px;
+    height: 34px;
+    border: 3px solid $blue;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border-radius: 100%;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

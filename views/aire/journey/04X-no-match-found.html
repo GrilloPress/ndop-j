@@ -1,0 +1,45 @@
+{% set title = 'No match found' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>Sorry, we were unable to find a unique match for your details.</p>
+
+              <p>This may be because you have not registered your details or they have not yet been shared with us.</p>
+              <h2 class="h3">Other ways to set your preferences</h2>
+              <p>
+                Contact the NHS Digital Contact Centre to verify your identity and discuss your data sharing preferences.
+              </p>
+              <p>
+                Call: 0300 303 5678
+              </p>
+              <p>
+                Open: 9am to 5pm Monday to Friday (excluding bank holidays).
+              </p>
+
+              <p>
+                <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/journey/index">Return to start &olarr;</a>
+              </p>
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

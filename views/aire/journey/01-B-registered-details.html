@@ -1,0 +1,59 @@
+{% set title = 'Registered contact details' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/01-B-registered-details.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">Registered contact details</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>
+                You must have an email address or mobile phone number registered with the NHS to use this online service.
+              </p>
+              <p>
+                When you use an NHS service, such as a GP, Dentist or Hospital Clinic, you may be asked for your mobile number or email.
+              </p>
+              <p>
+                If you have given a mobile number or email, then you may have your details registered with the NHS.
+              </p>
+              <h2 class="h3">Do you have your details registered with an NHS service?</h2>
+              <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+                <h3 class="h4" id="error-summary">Please indicate if you have a registered email address or mobile phone number</h3>
+                <ul class="link-list" id="link-to-errors">
+                </ul>
+              </div>
+              <form class="form" action="javascript:confirmAll();">
+                  <div id="registered-details-question" class="form-group form-row util-no-margin">
+                    <div id="registered-details-question-input-error" class="error error-message">
+                      <p class="error-text">Please make a selection to contiune</p>
+                    </div>
+                    <input type="radio" name="registered-details-pref" id="true" value="true" class="form-label form-label--radio">
+                    <label for="true" class="form-label form-label--radio multiple-choice--radio">
+                      Yes, I have my mobile or email registered with the NHS
+                    </label>
+                    <input type="radio" name="registered-details-pref" id="false" value="false" class="multiple-choice--radio">
+                    <label for="false" class="form-label form-label--radio multiple-choice--radio">
+                      No
+                    </label>
+                  </div>
+                <input id="submit-pref" class="button" type="submit" name="submit-pref" value="Continue">
+              </form>
+
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% set title = 'Contact us' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>To set your preferences online, you must be able to verify who you are.</p>
+              <p>You can’t do this yourself if you haven’t registered an email or mobile number with your GP practice.</p>
+              <h2 class="h3">Other ways to set your preferences</h2>
+              <p>
+                Contact the NHS Digital Contact Centre to verify your identity and discuss your data sharing preferences.
+              </p>
+              <p>
+                We may be able to guide you through the service, or set preferences on your behalf.
+              </p>
+              <p>
+                Call: 0300 303 5678
+              </p>
+              <p>
+                Open: 9am to 5pm Monday to Friday (excluding bank holidays).
+              </p>
+              <p>
+                <a role="button" class="button-wire" href="/{{PROTOTYPE_URL}}/journey/01-B-registered-details">&larr; Back</a>
+              </p>
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

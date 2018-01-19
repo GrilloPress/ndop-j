@@ -1,0 +1,77 @@
+{% set title = 'Register your preference - Register your preferences for sharing health data' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% set content_title = "Register your preference" %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="page-title">{{content_title}}</h1>
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-third">
+        <ol start="4">
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            {{content_title}}
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <p>
+            You can use our online service to request that your personally identifiable data is not used or shared beyond your own individual care.
+          </p>
+          <p>
+            If you opt-out of sharing your data, this will be respected by NHS Digital that collects, processes and releases health and care data on a national basis. It will also be respected by all other organisations that use health and social care information by March 2020.
+          </p>
+          <p>
+            Your decision will not affect your own individual care in any way. You can also change your mind and set a different preference in the future, if you wish to do so.
+          </p>
+          <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/journey/01-start">Register your preference</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          {{ patterns.page_nav( "How opting out works", "/" + PROTOTYPE_URL + "/05-how-opting-out-works", "", "" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

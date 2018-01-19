@@ -1,0 +1,59 @@
+{% set title = 'Finding your NHS number' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/02-B-finding-your-NHS-number.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">Finding your NHS number</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>
+                Everyone registered with the NHS has a unique patient identifier called an NHS Number.
+              </p>
+              <p>
+                You should be able to find your NHS Number on any letter or document you have received from the NHS, including prescriptions, test results, and hospital referral or appointment letters. If you have a medical card, your NHS number should be printed on it.
+              </p>
+              <p>
+                An NHS number is a 10 digit number, like 485 777 3456.
+              </p>
+              <h2 class="h3">Do you have your NHS number?</h2>
+              <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+                <h3 class="h4" id="error-summary">Please indicate if you know your NHS number</h3>
+                <ul class="link-list" id="link-to-errors">
+                </ul>
+              </div>
+              <form class="form" action="javascript:confirmAll();">
+                  <div id="finding-it-question" class="form-group form-row util-no-margin">
+                    <div id="finding-it-question-input-error" class="error error-message">
+                      <p class="error-text">Please make a selection to continue</p>
+                    </div>
+                    <input type="radio" name="finding-it-pref" id="true" value="true" class="form-label form-label--radio">
+                    <label for="true" class="form-label form-label--radio multiple-choice--radio">
+                      I have my NHS number
+                    </label>
+                    <input type="radio" name="finding-it-pref" id="false" value="false" class="multiple-choice--radio">
+                    <label for="false" class="form-label form-label--radio multiple-choice--radio">
+                      I cannot find my NHS number
+                    </label>
+                  </div>
+                <input id="submit-pref" class="button" type="submit" name="submit-pref" value="Continue">
+              </form>
+
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

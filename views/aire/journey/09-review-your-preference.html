@@ -1,0 +1,38 @@
+{% set title = 'Review your preference' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/09-review-your-preference.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/journey/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+
+              <h2 id="your-preference" class="h3">Your preference</h2>
+
+               <p class="confirmation-type" id="email-confirm" hidden="">We will send confirmation of your choice to al•••••••••••@gmail.com</p>
+
+               <p class="confirmation-type" id="mobile-confirm" hidden="">We will send confirmation of your choice to ••••••••788</p>
+
+               <p class="confirmation-type" id="post-confirm" hidden="">We will post you confirmation of your choice</p>
+
+               <a href="/{{PROTOTYPE_URL}}/journey/10-thank-you" class="button">Confirm</a>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

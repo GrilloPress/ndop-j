@@ -1,0 +1,183 @@
+@import "normalize";
+@import "environment/tools/mixins/addons";
+
+@import "environment/generic/border-box";
+@import "environment/generic/reset";
+@import "environment/generic/shared";
+@import "environment/generic/utilities";
+
+@import "environment/settings/colours";
+@import "environment/settings/fonts";
+@import "environment/settings/globals";
+@import "environment/settings/layout";
+@import "environment/settings/typography";
+
+@import "environment/tools/functions/colour";
+@import "environment/tools/functions/typography";
+
+@import "environment/tools/mixins/button";
+@import "environment/tools/mixins/conditionals";
+@import "environment/tools/mixins/layout";
+@import "environment/tools/mixins/typography";
+
+@import "objects/grid";
+@import "objects/page-section";
+
+@import "units/details";
+@import "units/figure";
+@import "units/form";
+@import "units/heading";
+@import "units/hr";
+@import "units/image";
+@import "units/inline";
+@import "units/link";
+@import "units/list";
+@import "units/paragraph";
+@import "units/quote";
+@import "units/table";
+
+@import "components/global-header";
+@import "components/global-footer";
+@import "components/notification-banner";
+@import "components/skiplinks";
+@import "components/local-header";
+@import "components/button";
+@import "components/link-list";
+
+// NHS.UK components
+@import "components/article-pagination";
+@import "components/callout";
+@import "components/media";
+@import "components/gallery";
+@import "components/form-label";
+@import "components/form-textbox";
+@import "components/form-multiple-choice";
+@import "components/form-input";
+@import "components/form-date";
+@import "components/form-validation";
+@import "components/inline-list";
+@import "components/meta";
+@import "components/panel";
+@import "components/step-list";
+@import "components/tabs";
+@import "components/error";
+@import "components/alerts";
+@import "components/toggle";
+@import "components/range";
+
+@import "components/v2";
+@import "components/v3";
+
+@import "components/proto-h";
+
+@import "components/page-band";
+@import "components/alpha-banner";
+
+@import "components/step";
+@import "components/details";
+
+
+// NDOP Overrides
+
+.local-header__subtitle {
+
+  color: white;
+  margin-top: 5px;
+
+}
+
+// Post grid margin
+
+// Link button
+
+.button--link {
+
+  font-family: "Frutiger W01", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0 2px 0 #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: .5px;
+    line-height: 1.25;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    padding: 12px 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    color: $blue;
+    width: auto;
+
+    &:before {
+
+      background: transparent;
+      content: "";
+      display: block;
+      height: 110%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
+
+}
+
+// inline list
+
+.list--inline {
+
+  padding-left: 0;
+
+  li {
+
+    list-style: none;
+    display: inline;
+
+    }
+  }
+
+  .list--unstyled {
+
+    padding-left: 0;
+
+    li {
+
+      list-style: none;
+    }
+
+  }
+
+  .list--breadcrumb {
+
+    padding-left: 0;
+    font-size:    18px;
+
+    li {
+
+      list-style: none;
+      padding-left: 0;
+      display: inline;
+
+      // Ignores first li and makes the second li and on have a > before it
+        + li:before {
+        content: ">";
+        padding: 0 5px;
+        color: $black;
+      }
+    }
+  }
+
+  .callout-title--muted {
+
+    background-color: $grey-4;
+    padding: 12px;
+
+    }

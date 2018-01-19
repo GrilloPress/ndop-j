@@ -1,0 +1,231 @@
+{% set title = 'Prototype Aire' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+
+  <nav aria-label="Breadcrumb">
+    <ol class="list--breadcrumb">
+      <li><a href="/">Index</a></li>
+      <li>{{title}}</li>
+    </ol>
+  </nav>
+
+    <div class="local-header">
+      <h1 class="local-header__title">{{title}}</h1>
+      <div class="local-header__intro">
+        <div class="reading-width">
+          <p>December 2017 - January 2018</p>
+        </div>
+      </div>
+    </div>
+
+    <p>This Prototype was created in response to user feedback in Lab 6 and UserZoom testing on Prototype F and Production</p>
+
+    <p>
+      It provides users with an extended screener before verification as well as an FAQ page before the set your preference page.
+    </p>
+
+    <a role="button" class="button" href="/{{PROTOTYPE_URL}}/01-overview">Start Prototype</a>
+    <hr>
+    <h2 id="prototype-sections">Prototype sections</h2>
+    <div class="grid-row">
+      <div class="column--one-half">
+        <h3>Pages</h3>
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-half">
+        <h3>App and related pages</h3>
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/index">
+              Start
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/01-start">
+              Registered contact details
+            </a>
+            <br />
+            <a href="/{{PROTOTYPE_URL}}/journey/01-B-registered-details">
+              Registered contact details B
+            </a>
+            <br />
+            <a href="/{{PROTOTYPE_URL}}/journey/01-C-contact-us">
+              Contact us (No registered details)
+            </a>
+            <br />
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/02-NHS-number">
+              NHS Number
+            </a>
+            <br />
+            <a href="/{{PROTOTYPE_URL}}/journey/02-B-finding-your-NHS-number">
+              Finding your NHS Number
+            </a>
+            <a href="/{{PROTOTYPE_URL}}/journey/02-C-contact-us">
+              Contact us (No NHS number)
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/03-verification-process">
+              Confirm who you are
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/04-your-details">
+              Confirm who you are
+            </a>
+            <br />
+            <a href="/{{PROTOTYPE_URL}}/journey/04X-contact-us">
+              Contact us (No associated contact details)
+            </a>
+            <br />
+            <a href="/{{PROTOTYPE_URL}}/journey/04X-no-match-found">
+              Contact us (No match found)
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/05-verification-option">
+              Verification option
+            </a>
+            <a href="/{{PROTOTYPE_URL}}/journey/05X-contact-us">
+              Contact us (Incorrect details in PDS)
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/06-enter-your-code">
+              Enter your code
+            </a>
+            <br />
+            <a href="/{{PROTOTYPE_URL}}/journey/06X-contact-us">
+              Contact us (No code recieved)
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/07-opt-out-process">
+              Register your preference (Opt-out process)
+            </a>
+            <br />
+            <a href="/{{PROTOTYPE_URL}}/journey/07X-exit-without-save">
+              Thank you (Exit without save)
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/08-set-your-preference">
+              Set your preference
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/09-review-your-preference">
+              Review your preference
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/10-thank-you">
+              Thank you
+            </a>
+          </li>
+
+        </ol>
+        <h3>Alternatives</h3>
+        <ul>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/03-verification-process-v1">
+              ALT 1 - Verification Process
+            </a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/journey/03-verification-process-v2">
+              ALT 2 - Verification Process
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        <h2 id="design-hypotheses">Design hypotheses</h2>
+        <h3 class="header-hypothesis">Screener</h3>
+        <p>
+          In UserZoom testing, 10% of users dropped off on the start page citing a lack of NHS Number or confusion around if their contact details are shared with the NHS.
+        </p>
+        <p>
+          On further pages, similar reasons were cited by users as reasons to drop out of the journey.
+        </p>
+        <p>
+          <strong>If</strong> we provide users with screener questions <br />
+          <strong>Then</strong> users will better understand the service requirements <br />
+          <strong>Because</strong> users will be provided with specific information on each requirement
+        </p>
+
+        <p>
+          <strong>If</strong> we provide users with screener questions <br />
+          <strong>Then</strong> users will understand the NHS number requirement better <br />
+          <strong>Because</strong> users will be provided with specific information about how to find their NHS Number, and what it is used for
+        </p>
+
+        <p>
+          <strong>If</strong> we provide users with screener questions <br />
+          <strong>Then</strong> users will understand the contact details requirement better <br />
+          <strong>Because</strong> users will be provided with specific information about what types of details the NHS holds and interactions with which services will likely mean their details are saved
+        </p>
+
+        <h3 class="header-hypothesis">Confirm your details interstitial</h3>
+        <p>
+          In user labs and UserZoom testing, users were left confused at what they were being asked of at the "confirm your identity" page.
+        </p>
+        <p>
+          They didn't understand the following steps of the service nor why they were being asked to submit personal identifiable data.
+        </p>
+        <p>
+          <strong>If</strong> we provide an easy to read summary before the "your details" form <br />
+          <strong>Then</strong> users will know what they will need to do to authenticate themselves for the service <br />
+          <strong>Because</strong> the stages will be shown clearly to them before they start
+        </p>
+        <p>
+          <strong>If</strong> we provide an easy to read summary before the "your details" form <br />
+          <strong>Then</strong> users will better understand why they are being asked for personal data <br />
+          <strong>Because</strong> it will be clearer why that data is being used and what role it plays in verifying the user
+        </p>
+
+        <h3 class="header-hypothesis">Preference question interstitial</h3>
+        <p>
+          Users are required to remember many new details about the NHS and how their data is used, and undergo an authentication process, before they can set their preference.
+        </p>
+        <p>
+          <strong>If</strong> we provide users with a summary of how their data is used by the NHS and how the process works <br />
+          <strong>Then</strong> users will be better placed to make an informed decision <br />
+          <strong>Because</strong> the need to remember every detail relevant to the opt-out service will be reduced
+        </p>
+      </div>
+    </div>
+
+      <a role="button" class="button" href="/{{PROTOTYPE_URL}}/01-overview">Start Prototype</a>
+
+    </div>
+</main>
+{% endblock %}

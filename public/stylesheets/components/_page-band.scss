@@ -1,0 +1,63 @@
+.page-band {
+
+  background-color: $blue;
+  color: white;
+  @include core-font(20);
+
+  a {
+
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+
+      text-decoration: underline;
+
+    }
+  }
+
+  .page-section {
+
+    padding: 16px 0;
+  }
+}
+
+.page-title {
+
+  @include bold-font(42);
+  padding: 32px 0;
+
+  &::after {
+
+    content: " ";
+    display: block;
+    border-bottom: 4px solid;
+    color: $blue;
+    width: 130px;
+    margin-top: 32px;
+  }
+
+}
+
+  &.stepper {
+
+    @include bold-font(42);
+    padding: 32px 0;
+
+    small {
+
+      display: block;
+      font-size: 60%;
+      margin-top: 16px;
+    }
+
+    &::after {
+
+      content: " ";
+      display: block;
+      border-bottom: 4px solid;
+      color: $blue;
+      width: 130px;
+      margin-top: 8px;
+    }
+  }

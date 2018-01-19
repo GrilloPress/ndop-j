@@ -1,0 +1,45 @@
+.form-label {
+  @include bold-font(20);
+  display: block;
+  position: relative;
+  width: auto;
+  cursor: pointer;
+
+  @include media(mid) {
+    float: left;
+    clear: both;
+  }
+
+}
+////////////////////////////////////////
+// Potential to be deleted
+
+.form-label--radio {
+  font-weight: normal;
+}
+
+///////////////////////////////////////
+
+.form-label--inline {
+
+  margin-right: 1.5rem;
+
+}
+.form-label--large {
+  @include bold-font(36);
+}
+
+.form-label__hint {
+  color: $grey-1;
+  display: block;
+  font-weight: normal;
+  margin-top: $baseline-grid-unit;
+
+  @include media(desktop) {
+    margin-top: $baseline-grid-unit * 2;
+  }
+}
+
+.gender-select label {
+  font-weight: normal;
+}
