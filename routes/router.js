@@ -12,29 +12,29 @@ router.get('/home', function(req, res, next) {
 });
 
 // GET v1 index page.
-router.get('/H', function(req, res, next) {
-  res.render( 'H/index' );
+router.get('/J', function(req, res, next) {
+  res.render( 'J/index' );
 });
 
 // GET all v1 URL reqs and push them to a template in the v1 file
 // This feels really brittle and hacky...
 // No handling of no view found...
-router.get('/H/:view', function(req, res, next) {
+router.get('/J/:view', function(req, res, next) {
   var theView = req.params.view;
-  res.render( 'H/' + theView );
+  res.render( 'J/' + theView );
 });
 
-router.get('/H/:subdir/:view', function(req, res, next) {
+router.get('/J/:subdir/:view', function(req, res, next) {
   var theView = req.params.view;
   var theDir = req.params.subdir;
-  res.render( 'H/' + theDir + '/' + theView );
+  res.render( 'J/' + theDir + '/' + theView );
 });
 
-router.get('/H/:subdir/:subdir2/:view', function(req, res, next) {
+router.get('/J/:subdir/:subdir2/:view', function(req, res, next) {
   var theView = req.params.view;
   var theDir = req.params.subdir;
   var theDir2 = req.params.subdir2;
-  res.render( 'H/' + theDir + '/' + theDir2 + '/' + theView );
+  res.render( 'J/' + theDir + '/' + theDir2 + '/' + theView );
 });
 // // // // // // //
 
@@ -117,34 +117,6 @@ router.get('/calder/:subdir/:subdir2/:view', function(req, res, next) {
   var theDir = req.params.subdir;
   var theDir2 = req.params.subdir2;
   res.render( 'calder/' + theDir + '/' + theDir2 + '/' + theView );
-});
-// // // // // // //
-
-
-// GET v1 index page.
-router.get('/H2', function(req, res, next) {
-  res.render( 'H2/index' );
-});
-
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/H2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'H2/' + theView );
-});
-
-router.get('/H2/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  res.render( 'H2/' + theDir + '/' + theView );
-});
-
-router.get('/H2/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'H2/' + theDir + '/' + theDir2 + '/' + theView );
 });
 // // // // // // //
 

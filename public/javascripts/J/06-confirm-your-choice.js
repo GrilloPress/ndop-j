@@ -3,7 +3,7 @@ $(window).load(function() {
   preferenceChecker();
 });
 
-var PROTOTYPE_URL = "/H";
+var PROTOTYPE_URL = "/J";
 
 function preferenceChecker() {
   var pref = sessionStorage.singlePref;

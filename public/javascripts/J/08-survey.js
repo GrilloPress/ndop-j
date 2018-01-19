@@ -1,4 +1,4 @@
-var PROTOTYPE_URL = "/H2";
+var PROTOTYPE_URL = "/J";
 
 function survey(){
 
@@ -27,7 +27,6 @@ function survey(){
     $('html,body').animate({scrollTop: $('#error-summary').offset().top -100});
 
   }
-
 }
 
 function saveResponse(response) {
@@ -37,7 +36,5 @@ function saveResponse(response) {
   $('.form, p#survey-message').fadeOut("slow", function(){
     $('p#thank-you-message').fadeIn();
   });
-
-
 
 }

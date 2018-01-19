@@ -1,6 +1,6 @@
 //
 
-var PROTOTYPE_URL = "/H2";
+var PROTOTYPE_URL = "/J";
 
 var count = 0;
 
