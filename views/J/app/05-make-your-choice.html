@@ -1,7 +1,8 @@
 {% set title = 'Set your preference' %}
 {% set PROTOTYPE_URL = 'J' %}
 {% block scripts %}
-<script src="/javascripts/{{PROTOTYPE_URL}}/05-make-your-choice.js"></script>
+
+<script src="/javascripts/{{PROTOTYPE_URL}}/05-set-your-preference.js"></script>
 {% endblock %}
 {% extends 'layouts/layout.html' %}
 
@@ -20,6 +21,9 @@
       <div class="grid-row">
         <div class="column--three-quarters">
           <div class="reading-width">
+            <p class="alert alert-info" role="alert" style="display:none;" tabindex="-1">
+              Your current preference is set to <strong id="preference">not use</strong> your data
+            </p>
             <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
               <h2 class="h3" id="error-summary">Please indicate your data sharing preferences to continue</h2>
               <ul class="link-list" id="link-to-errors">
