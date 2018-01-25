@@ -20,15 +20,32 @@
           <div class="grid-row">
             <div class="column--three-quarters">
               <p class="alert alert-success" role="alert" style="display:none;" tabindex="-1">Your preference has been saved.</p>
-              <p>
-                It can take up to 21 days before your decision can be applied to future data releases leaving the NHS. Your preference will be applied gradually across all organisations that use patient health information.
-              </p>
-              <p>
-                Your preference will be acknowledged by <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">other organisations that use health and social care information by March 2020</a>.
-              </p>
-              <p>
-                You can reset your preferences at any time in the future using this service.
-              </p>
+
+
+              <div id="not-shared" class="util-visuallyhidden">
+                <p>
+                  It can take up to 21 days before your decision can be applied to future data releases leaving the NHS. Your preference will be applied gradually across all organisations that use patient health information.
+                </p>
+                <p>
+                  Your preference will be acknowledged by <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">other organisations that use health and social care information by March 2020</a>.
+                </p>
+                <p>
+                  You can reset your preferences at any time in the future using this service.
+                </p>
+              </div>
+              <div id="shared" class="util-visuallyhidden">
+                <p>
+                  Your patient health information can be used to help improve health and care services for the future.
+                </p>
+                <p>
+                  If you have previously opted out of using your patient health information, it can take up to 21 days before your opt-out is withdrawn.
+                </p>
+                <p>
+                  You can reset your preference at any time in the future using this service.
+                </p>
+              </div>
+
+
               <p>
                 <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/app/index">Return to start &olarr;</a>
               </p>
