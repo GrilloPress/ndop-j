@@ -120,4 +120,32 @@ router.get('/calder/:subdir/:subdir2/:view', function(req, res, next) {
 });
 // // // // // // //
 
+
+// GET v1 index page.
+router.get('/don', function(req, res, next) {
+  res.render( 'don/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/don/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'don/' + theView );
+});
+
+router.get('/don/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'don/' + theDir + '/' + theView );
+});
+
+router.get('/don/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'don/' + theDir + '/' + theDir2 + '/' + theView );
+});
+// // // // // // //
+
 module.exports = router;
