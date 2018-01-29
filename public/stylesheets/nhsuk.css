@@ -7,7 +7,6 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://assets.nhs.uk/fonts/nhsuk-fonts-1.1.0.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -465,6 +464,22 @@ body {
 
 .util-no-margin {
   margin-top: 0 !important; }
+
+@font-face {
+  font-family: "Frutiger W01";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/FrutigerLTW01-55Roman.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/FrutigerLTW01-55Roman.eot?#iefix") format("embedded-opentype"), url("/fonts/FrutigerLTW01-55Roman.woff2") format("woff2"), url("/fonts/FrutigerLTW01-55Roman.woff") format("woff"), url("/fonts/FrutigerLTW01-55Roman.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Frutiger W01";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/fonts/FrutigerLTW01-65Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/FrutigerLTW01-65Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/FrutigerLTW01-65Bold.woff2") format("woff2"), url("/fonts/FrutigerLTW01-65Bold.woff") format("woff"), url("/fonts/FrutigerLTW01-65Bold.ttf") format("truetype"); }
 
 .grid-row {
   margin: 0 -16px; }
