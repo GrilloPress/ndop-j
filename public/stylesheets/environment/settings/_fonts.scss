@@ -5,7 +5,8 @@
   font-family: "Frutiger W01";
   font-weight: 400;
   font-style: normal;
-  src: url("/fonts/FrutigerLTW01-55Roman.woff2") format('woff2'), /* Super Modern Browsers */
+  src: local('FrutigerLTW01-55Roman'),
+       url("/fonts/FrutigerLTW01-55Roman.woff2") format('woff2'), /* Super Modern Browsers */
        url('/fonts/FrutigerLTW01-55Roman.woff') format('woff'), /* Pretty Modern Browsers */
        url('/fonts/FrutigerLTW01-55Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('/fonts/FrutigerLTW01-55Roman.eot'), /* IE9 Compat Modes */
@@ -16,7 +17,8 @@
   font-family: "Frutiger W01";
   font-weight: 600;
   font-style: normal;
-  src: url("/fonts/FrutigerLTW01-65Bold.woff2") format('woff2'), /* Super Modern Browsers */
+  src: local('FrutigerLTW01-65Bold'),
+       url("/fonts/FrutigerLTW01-65Bold.woff2") format('woff2'), /* Super Modern Browsers */
        url('/fonts/FrutigerLTW01-65Bold.woff') format('woff'), /* Pretty Modern Browsers */
        url('/fonts/FrutigerLTW01-65Bold.ttf')  format('truetype') /* Safari, Android, iOS */
        url('/fonts/FrutigerLTW01-65Bold.eot'), /* IE9 Compat Modes */
@@ -27,7 +29,8 @@
   font-family: "Frutiger W01";
   font-weight: 700;
   font-style: normal;
-  src: url("/fonts/FrutigerLTW01-75Black.woff2") format('woff2'), /* Super Modern Browsers */
+  src: local('FrutigerLTW01-75Black'),
+       url("/fonts/FrutigerLTW01-75Black.woff2") format('woff2'), /* Super Modern Browsers */
        url('/fonts/FrutigerLTW01-75Black.woff') format('woff'), /* Pretty Modern Browsers */
        url('/fonts/FrutigerLTW01-75Black.ttf')  format('truetype') /* Safari, Android, iOS */
        url('/fonts/FrutigerLTW01-75Black.eot'), /* IE9 Compat Modes */
