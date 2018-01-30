@@ -22,6 +22,7 @@
 // By default grid columns break to become full width at 925px
 .column--full {
   @include grid-column(1 / 1);
+  @include grid-column(1 / 1, mobile);
 }
 
 .column--one-quarter {
@@ -108,4 +109,15 @@
 }
 .column--one-eighth {
   @include grid-column(1 / 8);
+}
+.column--one-twelth {
+  @include grid-column(12 / 12, mobile);
+  @include grid-column(1 / 12, tablet);
+  @include grid-column(1 / 12);
+}
+
+.column--eleven-twelves {
+  @include grid-column(12 / 12, mobile);
+  @include grid-column(11 / 12, tablet);
+  @include grid-column(11 / 12);
 }

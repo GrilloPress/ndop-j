@@ -482,8 +482,14 @@ body {
 
 .column--full {
   display: block;
+  padding: 0 16px;
+  display: block;
   padding: 0 16px; }
   @media (min-width: 925px) {
+    .column--full {
+      float: left;
+      width: 100%; } }
+  @media (max-width: 640px) {
     .column--full {
       float: left;
       width: 100%; } }
@@ -661,6 +667,46 @@ body {
     .column--one-eighth {
       float: left;
       width: 12.5%; } }
+
+.column--one-twelth {
+  display: block;
+  padding: 0 16px;
+  display: block;
+  padding: 0 16px;
+  display: block;
+  padding: 0 16px; }
+  @media (max-width: 640px) {
+    .column--one-twelth {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 641px) {
+    .column--one-twelth {
+      float: left;
+      width: 8.33333%; } }
+  @media (min-width: 925px) {
+    .column--one-twelth {
+      float: left;
+      width: 8.33333%; } }
+
+.column--eleven-twelves {
+  display: block;
+  padding: 0 16px;
+  display: block;
+  padding: 0 16px;
+  display: block;
+  padding: 0 16px; }
+  @media (max-width: 640px) {
+    .column--eleven-twelves {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 641px) {
+    .column--eleven-twelves {
+      float: left;
+      width: 91.66667%; } }
+  @media (min-width: 925px) {
+    .column--eleven-twelves {
+      float: left;
+      width: 91.66667%; } }
 
 .page-section {
   margin: 0 16px;
@@ -1979,6 +2025,71 @@ p {
       padding: 32px; } }
   .callout:focus {
     outline: 3px solid #ffb81c; }
+
+.callout--interruption {
+  -webkit-box-shadow: 0px 0px 14px 3px #ebebeb;
+  -moz-box-shadow: 0px 0px 14px 3px #ebebeb;
+  box-shadow: 0px 0px 14px 3px #ebebeb;
+  border: 1px solid #cbd6d8;
+  border-radius: 5px; }
+  .callout--interruption h1 {
+    font-family: "Frutiger W01", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: none; }
+    @media (min-width: 641px) {
+      .callout--interruption h1 {
+        font-size: 32px;
+        line-height: 48px; } }
+    @media (min-width: 925px) {
+      .callout--interruption h1 {
+        font-size: 36px;
+        line-height: 48px; } }
+  .callout--interruption h2 {
+    font-family: "Frutiger W01", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: none; }
+    @media (min-width: 641px) {
+      .callout--interruption h2 {
+        font-size: 24px;
+        line-height: 32px; } }
+    @media (min-width: 925px) {
+      .callout--interruption h2 {
+        font-size: 24px;
+        line-height: 32px; } }
+  .callout--interruption .column--number-counter {
+    width: 8%;
+    float: left; }
+  .callout--interruption .number-circle {
+    padding: 2px 12px;
+    background-color: #005eb8;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+    display: inline-block;
+    text-align: center; }
+  .callout--interruption .link-list li {
+    margin-bottom: 16px;
+    font-family: "Frutiger W01", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: none; }
+    @media (min-width: 641px) {
+      .callout--interruption .link-list li {
+        font-size: 20px;
+        line-height: 32px; } }
+    @media (min-width: 925px) {
+      .callout--interruption .link-list li {
+        font-size: 20px;
+        line-height: 32px; } }
+  .callout--interruption .link-list.no-margin {
+    margin: 0; }
+    .callout--interruption .link-list.no-margin li {
+      margin: 0; }
 
 .callout--muted {
   background-color: #d8dde0; }
