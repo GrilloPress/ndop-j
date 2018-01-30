@@ -1,0 +1,6 @@
+.nhs-no-icon {
+  width: 150px;
+  @include media(mobile) {
+    margin-top: 10px;
+  }
+}
