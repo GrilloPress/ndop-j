@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="299px" height="316px" viewBox="0 0 299 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="288px" height="273px" viewBox="0 0 288 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <title>Group 8</title>
     <desc>Created with Sketch.</desc>
@@ -7,8 +7,8 @@
         <polygon id="path-1" points="0 0 288 0 288 259.46281 231.875 273 231.875 261.154959 174.1875 273 174.1875 261.154959 115.9375 273 115.9375 261.154959 57.6875 273 57.6875 261.154959 0 273"></polygon>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-8" transform="translate(2.000000, 2.000000)">
-            <g id="letter" transform="translate(9.000000, 41.000000)">
+        <g id="Group-8">
+            <g id="letter">
                 <g id="Rectangle-7">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
                     <path stroke="#979797" stroke-width="2" d="M1,1 L1,271.773806 L58.6875,259.928765 L58.6875,271.776186 L116.9375,259.931144 L116.9375,271.776186 L175.1875,259.931144 L175.1875,271.773806 L232.875,259.928765 L232.875,271.730126 L287,258.67533 L287,1 L1,1 Z"></path>
@@ -32,16 +32,13 @@
                     <path d="M243.428164,149.818122 L0.722287736,149.818122" id="Line-3" stroke="#425563" stroke-width="3" stroke-linecap="square"></path>
                 </g>
             </g>
-            <g id="Group-3">
-                <polygon id="Triangle" fill-opacity="0.496150362" fill="#4A4A4A" transform="translate(164.097101, 97.712212) rotate(109.000000) translate(-164.097101, -97.712212) " points="156.61649 45.9232238 220.52261 128.62303 107.671593 149.501199"></polygon>
-                <circle id="Oval" stroke="#979797" stroke-width="2" fill="#FFFFFF" cx="76" cy="76" r="76"></circle>
-                <text id="000-999-3467" font-family="FrutigerLTStd-Bold, Frutiger LT Std" font-size="18" font-weight="bold" fill="#425563">
-                    <tspan x="30" y="80">000 999 3467</tspan>
+            <g id="Group-3" transform="translate(2.000000, 33.000000)">
+                <polygon id="Triangle" fill-opacity="0.496150362" fill="#4A4A4A" transform="translate(138.167462, 81.841281) rotate(109.000000) translate(-138.167462, -81.841281) " points="70.3445831 30.2806149 205.990342 27.9941031 140.483276 135.688459"></polygon>
+                <circle id="Oval" stroke="#979797" stroke-width="2" fill="#FFFFFF" cx="84" cy="149" r="84"></circle>
+                <text id="000-999-3467" font-family="FrutigerLTStd-Bold, Frutiger LT Std" font-size="26" font-weight="bold" fill="#425563">
+                    <tspan x="7" y="155">000 999 3467</tspan>
                 </text>
-                <text id="17-Feb-1968" font-family="FrutigerLTStd-Bold, Frutiger LT Std" font-size="18" font-weight="bold" fill="#425563">
-                    <tspan x="30" y="107">17 Feb 1968</tspan>
-                </text>
-                <circle id="Oval" stroke="#979797" stroke-width="4" cx="76" cy="76" r="76"></circle>
+                <circle id="Oval" stroke="#979797" stroke-width="4" cx="84" cy="149" r="84"></circle>
             </g>
         </g>
     </g>

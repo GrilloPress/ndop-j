@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="328px" height="299px" viewBox="0 0 328 299" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="265px" height="252px" viewBox="0 0 265 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <title>Group 7</title>
     <desc>Created with Sketch.</desc>
@@ -19,7 +19,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group-7" transform="translate(2.000000, 2.000000)">
-            <g id="Group-6" transform="translate(0.000000, 47.000000)">
+            <g id="Group-6">
                 <g id="Rectangle">
                     <use fill="#D8FBE0" fill-rule="evenodd" xlink:href="#path-1"></use>
                     <rect stroke="#979797" stroke-width="2" x="-1" y="-1" width="262.966543" height="249.583643"></rect>
@@ -59,18 +59,15 @@
                 <path d="M39.3041568,21.1152416 L51.8079245,21.1152416" id="Line-2" stroke="#425563" stroke-width="2" stroke-linecap="square"></path>
                 <path d="M91,47.1152416 L116.352295,47.1152416" id="Line-2" stroke="#425563" stroke-width="2" stroke-linecap="square"></path>
             </g>
-            <g id="Group-5" transform="translate(85.000000, 0.000000)">
-                <polygon id="Triangle" fill-opacity="0.496150362" fill="#4A4A4A" transform="translate(72.469292, 100.724782) rotate(246.000000) translate(-72.469292, -100.724782) " points="108.485667 51.1157428 137.104245 150.333821 7.83433854 97.7050136"></polygon>
-                <g id="Group" transform="translate(60.000000, 0.000000)">
+            <g id="Group-5" transform="translate(41.000000, 21.000000)">
+                <polygon id="Triangle" fill-opacity="0.496150362" fill="#4A4A4A" transform="translate(80.066859, 71.443764) rotate(246.000000) translate(-80.066859, -71.443764) " points="128.683301 62.9135142 74.9230078 136.947836 31.4504178 5.93969191"></polygon>
+                <g id="Group" transform="translate(41.000000, 48.000000)">
                     <circle id="Oval" stroke="#979797" stroke-width="4" fill="#D8FBE0" cx="89.5" cy="89.5" r="89.5"></circle>
-                    <text id="NHS-Number:" font-family="FrutigerLTStd-Bold, Frutiger LT Std" font-size="14" font-weight="bold" fill="#425563">
-                        <tspan x="5" y="80">NHS Number:</tspan>
+                    <text id="485-777-3456" font-family="FrutigerLTStd-Bold, Frutiger LT Std" font-size="24" font-weight="bold" fill="#425563">
+                        <tspan x="8" y="89">485 777 3456</tspan>
                     </text>
-                    <text id="000-999-3467" font-family="FrutigerLTStd-Bold, Frutiger LT Std" font-size="14" font-weight="bold" fill="#425563">
-                        <tspan x="91" y="102">000 999 3467</tspan>
-                    </text>
-                    <polygon id="Rectangle-3" fill="#FFFFFF" points="134 108 179.524647 108 168 132.5 155 151.5 134 168"></polygon>
-                    <polygon id="Rectangle-4" fill="#9EED91" points="171 108 178.587441 108 178.5 109 171 126.5"></polygon>
+                    <polygon id="Rectangle-3" fill="#FFFFFF" points="119 108 179.524647 108 168 132.5 155 151.5 119 174.5"></polygon>
+                    <polygon id="Rectangle-4" fill="#9EED91" points="162.5 108 178.587441 108 178.5 109 162.5 142.5"></polygon>
                     <circle id="Oval" stroke="#979797" stroke-width="4" cx="89.5" cy="89.5" r="89.5"></circle>
                 </g>
             </g>

@@ -3545,6 +3545,12 @@ input[type=range]:focus::-ms-fill-upper {
   display: inline-block;
   margin: 0 auto; }
 
+.nhs-no-icon {
+  width: 150px; }
+  @media (max-width: 640px) {
+    .nhs-no-icon {
+      margin-top: 10px; } }
+
 .page-band {
   background-color: #005eb8;
   color: white;
