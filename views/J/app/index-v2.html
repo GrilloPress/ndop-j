@@ -1,0 +1,186 @@
+{% set title = 'Register your preference for sharing patient health data' %}
+{% set PROTOTYPE_URL = 'J' %}
+{% block scripts %}
+<script src="/javascripts/details.polyfill-1.0.0.min.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">Register your preference</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>
+                Use this service to manage your preferences for sharing your patient health information.
+              </p>
+              <p>
+              If you opt-out of sharing your personally identifiable data, details like your name and address will no longer appear in data shared by the NHS. This will only happen if opt-outs apply to the data set being shared.
+            </p>
+            <h2>How the service works</h2>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="step-container blue">
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--four-fifths">
+          <div class="reading-width">
+            <div id="step-enter-your-details" class="step">
+              <div class="grid-row">
+                <div class="column--step-counter offset">
+                  <div>
+                    1
+                  </div>
+                </div>
+                <div class="column--step-body-with-icon">
+                  <h3>Check your details</h3>
+                  <p>
+                    Tell us your name, date of birth, postcode and NHS number. We will use these details to find your contact information in our patient database.
+                  </p>
+                  <p>
+                    The information you provide will not be saved.
+                  </p>
+
+                </div>
+                <div class="column--step-icon">
+                  <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step-container">
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--four-fifths">
+          <div class="reading-width">
+            <div id="step-choose-your-contact-method" class="step">
+              <div class="grid-row">
+                <div class="column--step-counter offset">
+                  <div>
+                    2
+                  </div>
+                </div>
+                <div class="column--step-body-with-icon">
+                  <h3>Confirm your identity</h3>
+                  <p>
+                    Using the details we hold in our database, we will send you a one-time verification code to your selected contact method.
+                  </p>
+                  <p>
+                    When your code is verified, you will be able to set your preference online.
+                  </p>
+                </div>
+                <div class="column--step-icon">
+                  <img class="marketing-icon" alt="check your details icon" src="/images/verification-method-icon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step-container blue">
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--four-fifths">
+          <div class="reading-width">
+            <div id="step-enter-your-security-code" class="step">
+              <div class="grid-row">
+                <div class="column--step-counter offset">
+                  <div>
+                    3
+                  </div>
+                </div>
+                <div class="column--step-body-with-icon">
+                  <h3>Set your preference</h3>
+                  <p>
+                    You will then be able to set an opt-out preference. Once an opt-out request is received, it can take up to 21 days before it can be applied to future data releases.
+                  </p>
+                  <p>
+                    The decision you make will not affect your individual care.
+                  </p>
+
+                </div>
+                <div class="column--step-icon">
+                  <img class="marketing-icon" alt="check your details icon" src="/images/choice-icon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section" id="before-you-start-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <h2>Before you start</h2>
+              <p>
+                You must have an email address or phone number registered with an NHS service to continue online. <a href="/{{PROTOTYPE_URL}}/app/00-other-ways-to-set-your-preferences">Other ways to set your preferences instead</a>.
+              </p>
+              <p>To continue you will need:</p>
+              <ul>
+                <li>access to your email or mobile phone</li>
+                <li>your NHS number</li>
+              </ul>
+
+              <details class="" role="group">
+                <summary role="button" aria-controls="details-content-0" aria-expanded="false">
+                  <span class="details__summary">Where can I find my NHS number?</span>
+                </summary>
+                <div class="details__content" id="details-content-0" aria-hidden="true">
+                  <div class="reading-width">
+                    <p>
+                      Everyone registered with the NHS has a unique patient identifier called an NHS Number.
+                    </p>
+                    <p>
+                      An NHS number is a 10 digit number, like 485 777 3456.
+                    </p>
+                    <p>You can find your NHS number on any document sent to you by the NHS. This may include:</p>
+                    <ul>
+                      <li>prescriptions</li>
+                      <li>test results</li>
+                      <li>hospital referral letters</li>
+                      <li>appointment letters</li>
+                      <li>your NHS medical card</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <p><a role="button" class="button" title="Continue Opt-out Process" href="/{{PROTOTYPE_URL}}/app/01-confirm-who-you-are">Start</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--three-quarters">
+          {{ patterns.page_nav( "Overview", "/" + PROTOTYPE_URL + "/01-overview", "", "" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+{% endblock %}

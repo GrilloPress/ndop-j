@@ -1,0 +1,86 @@
+{% set title = 'Register your preference for sharing patient health data' %}
+{% set PROTOTYPE_URL = 'calder' %}
+{% block scripts %}
+<script src="/javascripts/details.polyfill-1.0.0.min.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--full">
+              <div class="callout callout--interruption">
+                <h1>How to register your preference online</h1>
+                <p>
+                  For security reasons we must verify who you are before you can set your preference.
+                </p>
+               <ul class="link-list no-margin">
+                 <li>
+                   <div class="grid-row">
+                     <div class="column--one-twelth">
+                       <span class="number-circle"> 1 </span>
+                     </div>
+                     <div class="column--four-fifths">
+                       <h2> Enter your details</h2>
+                       Tell us your name, date of birth, postcode and NHS number.
+                     </div>
+                   </div>
+                 </li>
+
+                 <li>
+                   <div class="grid-row">
+                     <div class="column--one-twelth">
+                       <span class="number-circle"> 2 </span>
+                     </div>
+                     <div class="column--four-fifths">
+                       <h2> Choose your contact method</h2>
+                       Using the contact details we hold in our database, we will send you a one-time verification code.
+                     </div>
+                   </div>
+                 </li>
+
+                 <li>
+                   <div class="grid-row">
+                     <div class="column--one-twelth">
+                       <span class="number-circle"> 3 </span>
+                     </div>
+                     <div class="column--four-fifths">
+                       <h2> Enter your security code </h2>
+                       When your code is verified, you will be able to set your preference online.
+                     </div>
+                   </div>
+                 </li>
+
+               </ul>
+               <p>
+                 You agree to let us search for your details in our database, so that we can send you a one-time security passcode
+               </p>
+                <p>
+                  <a href="/{{PROTOTYPE_URL}}/end" class="button" role="button">Agree and continue</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--three-quarters">
+          {{ patterns.page_nav( "Before you start", "/" + PROTOTYPE_URL + "/06-register-your-preference#before-you-start", "", "" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+{% endblock %}

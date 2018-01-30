@@ -12,6 +12,61 @@
   }
 }
 
+.callout--interruption {
+
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
+  -moz-box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
+  box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
+  border: 1px solid #cbd6d8;
+  border-radius: 5px;
+
+  h1 {
+
+    @include bold-font(36);
+  }
+
+  h2 {
+
+    @include bold-font(24);
+  }
+
+  .column--number-counter {
+
+    width: 8%;
+    float: left;
+  }
+
+  .number-circle {
+
+    padding: 2px 12px;
+    background-color: $blue;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .link-list {
+
+    li {
+
+      margin-bottom: 16px;
+      @include core-font(20);
+    }
+
+    &.no-margin {
+
+      margin: 0;
+
+      li {
+
+        margin: 0;
+      }
+    }
+  }
+}
+
 .callout--muted {
   background-color: $grey-4;
 }
