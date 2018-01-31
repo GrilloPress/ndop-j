@@ -3551,6 +3551,10 @@ input[type=range]:focus::-ms-fill-upper {
     .nhs-no-icon {
       margin-top: 10px; } }
 
+.nhs_number_details {
+  border-left: 5px solid #768692;
+  padding-left: 20px; }
+
 .page-band {
   background-color: #005eb8;
   color: white;
