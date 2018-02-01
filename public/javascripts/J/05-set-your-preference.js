@@ -1,17 +1,36 @@
 var PROTOTYPE_URL = "/J";
 
+$(window).load( function() {
+  
+  $( '#single-question' ).change( function() {
+
+    $( 'input[name="single-pref"]:checked' ).each( function () {
+
+      $(this).parent().addClass( "checked" );
+
+    })
+
+    $( 'input[name="single-pref"]:not(:checked)' ).each( function () {
+
+      $(this).parent().removeClass( "checked" );
+
+    })
+
+  })
+});
+
 $(window).ready(function() {
 
   if ( sessionStorage.singlePref == "true" ) {
     $(" #preference ").text( "use");
-    $( "#single-opted-in" ).prop( "checked", true );
+    $( "#single-opted-in" ).prop( "checked", true ).parent().addClass( "checked" );
     $( ".alert" ).fadeIn( 1000, function() {
     // Animation complete
     });
   } else if ( sessionStorage.singlePref == "false" ) {
 
     $(" #preference ").text( "not use");
-    $( "#single-opted-out" ).prop( "checked", true );
+    $( "#single-opted-out" ).prop( "checked", true ).parent().addClass( "checked" );
     $( ".alert" ).fadeIn( 1000, function() {
     // Animation complete
     });
@@ -20,7 +39,6 @@ $(window).ready(function() {
 
     return
   }
-
 
 });
 

@@ -2390,42 +2390,47 @@ p {
   .checkbox-container-has-error {
     min-height: 290px; } }
 
-[type="radio"]:focus + label:before {
-  box-shadow: 0 0 0 5px #ffb81c; }
+.form-label--radio {
+  background-color: #f7f8f9;
+  border-radius: 2px;
+  padding: 0.9em;
+  display: inline-block;
+  margin: 8px 0;
+  border: 2px solid #E8EDEE; }
+  .form-label--radio.checked {
+    background-color: white;
+    border: 2px solid #00519f; }
+  .form-label--radio:hover {
+    background-color: white;
+    border: 2px solid #231f20; }
+  .form-label--radio.full {
+    display: block; }
+  @media (min-width: 925px) {
+    .form-label--radio.lg {
+      min-width: 140px; } }
+  @media (max-width: 640px) {
+    .form-label--radio {
+      display: block; } }
 
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
-  position: absolute;
-  left: -9999px; }
+[type="radio"] {
+  position: relative;
+  top: -3px;
+  margin-right: 8px; }
+  [type="radio"]:focus + label:before {
+    box-shadow: 0 0 0 5px #ffb81c; }
 
 [type="radio"]:checked + label,
 [type="radio"]:not(:checked) + label {
   position: relative;
-  padding-left: 50px;
   cursor: pointer; }
 
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 34px;
-  height: 34px;
-  border: 3px solid #005eb8;
-  border-radius: 100%;
-  background: #fff; }
+  content: ''; }
 
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
-  content: '';
-  width: 20px;
-  height: 20px;
-  background: black;
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  border-radius: 100%; }
+  content: ''; }
 
 [type="radio"]:not(:checked) + label:after {
   opacity: 0;
@@ -2445,14 +2450,14 @@ input[type='password'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 0;
+  border-radius: 2px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   display: block;
   width: 100%;
   margin: 8px 0 16px 0;
-  padding: 8px;
+  padding: 0.5em;
   border: 2px solid #005eb8;
   font-family: inherit;
   font-size: inherit;
@@ -2502,6 +2507,12 @@ input[type='password'] {
     input[type='email'].-small,
     input[type='password'].-small {
       width: 11.5em; } }
+
+input[type="radio"]:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 5px #ffb81c;
+  -moz-box-shadow: 0 0 0 5px #ffb81c;
+  box-shadow: 0 0 0 5px #ffb81c; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

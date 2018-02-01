@@ -127,7 +127,59 @@
 
 // Radio Buttons
 
+.form-label--radio {
+
+    background-color: lighten( #E8EDEE, 5% );
+    border-radius: 2px;
+    padding: 0.9em;
+    display: inline-block;
+    margin: 8px 0;
+    border: 2px solid #E8EDEE;
+
+    &.checked {
+
+      background-color: white;
+      border: 2px solid darken($blue, 5%);
+
+    }
+
+    &:hover {
+
+      background-color: white;
+      border: 2px solid  $black;
+
+    }
+
+    &.full {
+
+      display: block;
+    }
+
+    &.lg {
+
+
+
+      @include media(desktop) {
+
+        min-width: 140px;
+      }
+
+    }
+
+    @include media(mobile) {
+
+      display: block;
+    }
+
+
+}
+
 [type="radio"]{
+
+  position: relative;
+  top: -3px;
+  margin-right: 8px;
+
   &:focus + label:before {
     box-shadow: 0 0 0 5px $yellow;
   }
@@ -135,39 +187,23 @@
 
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
-    position: absolute;
-    left: -9999px;
 }
 [type="radio"]:checked + label,
 [type="radio"]:not(:checked) + label
 {
     position: relative;
-    padding-left: 50px;
     cursor: pointer;
     // display: inline-block;
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
     content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 34px;
-    height: 34px;
-    border: 3px solid $blue;
-    border-radius: 100%;
-    background: #fff;
+
 }
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
     content: '';
-    width: 20px;
-    height: 20px;
-    background: black;
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    border-radius: 100%;
+
 }
 [type="radio"]:not(:checked) + label:after {
     opacity: 0;

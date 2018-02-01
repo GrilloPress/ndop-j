@@ -9,6 +9,32 @@ $(window).load(function() {
   $( ".alert" ).fadeIn( 1000, function() {
   // Animation complete
   });
+
+  $( 'input[name="channel-choice"]:checked' ).each( function () {
+
+    $(this).parent().addClass( "checked" );
+  })
+
+  $( 'input[name="channel-choice"]:not(:checked)' ).each( function () {
+
+    $(this).parent().removeClass( "checked" );
+  })
+
+
+
+  $( '#verification-radio' ).change( function() {
+
+    $( 'input[name="channel-choice"]:checked' ).each( function () {
+
+      $(this).parent().addClass( "checked" );
+    })
+
+    $( 'input[name="channel-choice"]:not(:checked)' ).each( function () {
+
+      $(this).parent().removeClass( "checked" );
+    })
+
+  })
 });
 
 //JS ----------------------------------------------
