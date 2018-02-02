@@ -14,9 +14,9 @@
 
 .callout--interruption {
 
-  -webkit-box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
-  -moz-box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
-  box-shadow: 0px 0px 14px 3px rgba(235,235,235,1);
+  -webkit-box-shadow: 0px 0px 14px 3px #ebebeb;
+  -moz-box-shadow: 0px 0px 14px 3px #ebebeb;
+  box-shadow: 0px 0px 14px 3px #ebebeb;
   border: 1px solid #cbd6d8;
   border-radius: 5px;
 
@@ -45,6 +45,10 @@
     margin-right: 16px;
     display: inline-block;
     text-align: center;
+
+    @include media(mobile) {
+      margin: 16px 0;
+    }
   }
 
   .link-list {

@@ -2072,6 +2072,9 @@ p {
     margin-right: 16px;
     display: inline-block;
     text-align: center; }
+    @media (max-width: 640px) {
+      .callout--interruption .number-circle {
+        margin: 16px 0; } }
   .callout--interruption .link-list li {
     margin-bottom: 16px;
     font-family: "Frutiger W01", Arial, sans-serif;
