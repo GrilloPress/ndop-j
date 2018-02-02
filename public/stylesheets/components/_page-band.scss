@@ -42,7 +42,7 @@
   &.stepper {
 
     @include bold-font(42);
-    padding: 32px 0;
+    padding: 32px 0 8px 0;
 
     small {
 
