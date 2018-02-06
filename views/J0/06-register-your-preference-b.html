@@ -1,0 +1,130 @@
+{% set title = 'Register your preference - Register your preference for sharing health data' %} {% set PROTOTYPE_URL = 'J0' %} {% set content_title = "Register your preference" %} {% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/0X-before-you-start.js"></script>
+{% endblock %} {% extends 'layouts/layout.html' %} {% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="page-title">{{content_title}}</h1>
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-third">
+        <ol start="4">
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            {{content_title}}
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <p>
+            You can use our online service to request that your personally identifiable data is not used or shared beyond your own individual care.
+          </p>
+          <p>
+            If you decide to opt-out, this will be respected by NHS Digital that collects, processes and releases health and care data on a national basis. It will also be respected by all other organisations that use health and social care information by March 2020.
+          </p>
+          <p>
+            Your decision will not affect your own individual care in any way. You can also change your mind and set a different preference in the future, if you wish to do so.
+          </p>
+          <h2 class="h3" id="before-you-start">Before you start</h2>
+          <p>
+            You must have an email address or phone number registered with an NHS service to continue online. <a href="/{{PROTOTYPE_URL}}/app/00-other-ways-to-set-your-preferences">Other ways to set your preference</a>.
+          </p>
+          <p>To continue you will need:</p>
+          <ul>
+            <li>access to your email or mobile phone</li>
+            <li>your NHS number</li>
+          </ul>
+
+          <details class="" role="group">
+            <summary role="button" aria-controls="details-content-0" aria-expanded="false">
+              <span class="details__summary">Where can I find my NHS number?</span>
+            </summary>
+            <div class="details__content" id="details-content-0" aria-hidden="true">
+              <div class="reading-width">
+                <p>
+                  An NHS number is a 10 digit number, like 485 777 3456.
+                </p>
+                <p>You can find your NHS number on any document sent to you by the NHS. This may include:</p>
+
+                <div class="grid-row">
+                  <div class="column--full">
+                    <h2 class="h4">A letter from the NHS</h2>
+                  </div>
+                  <div class="column--one-quarter">
+                    <img class="nhs-no-icon" src="/images/letter_nhs_no.svg" alt="Location of NHS number on a letter from the NHS"/>
+                  </div>
+                  <div class="column--three-quarters">
+                    <p>You should be able to find your NHS Number on any letter or document you have received from the NHS, including  test results, and hospital referral or appointment letters.</p>
+                    <p>Your NHS number will usually be located at the top of the page.</p>
+                  </div>
+                </div>
+
+                <div class="grid-row">
+                  <div class="column--full">
+                    <h2 class="h4">A prescription from the NHS</h2>
+                  </div>
+                  <div class="column--one-quarter">
+                    <img class="nhs-no-icon" src="/images/presc_nhs_no.svg" alt="Location of NHS number on a prescription from the NHS"/>
+                  </div>
+                  <div class="column--three-quarters">
+                    <p>You can find your NHS Number on a prescription you have received from the NHS.</p>
+                    <p>Your NHS number is located on the green side of the prescription, which you would hand to a pharmacist to obtain your medication.</p>
+                  </div>
+                </div>
+
+                <div class="grid-row">
+                  <div class="column--full">
+                    <h2 class="h4">Other ways</h2>
+                  </div>
+                  <div class="column--full">
+                    <p>You can also find your NHS number on your NHS Medical Card if you have one. If you don't have any of these, you can ask your GP for help in finding your NHS number.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+          <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/app/index">Register your preference</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          {{ patterns.page_nav( "How opting out works", "/" + PROTOTYPE_URL + "/05-how-opting-out-works", "", "" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% set title = 'Contact us' %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>Sorry, we seem to have the wrong contact details for you.</p>
+
+              <p>This may be because you have not registered these details with your GP, or your GP has not yet shared them with us.</p>
+
+              <p>
+                Call: 0300 303 5678
+              </p>
+              <p>
+                Open: 9am to 5pm Monday to Friday (excluding bank holidays).
+              </p>
+            </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="page-section">
+        <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              {{ patterns.page_nav( "Register your preferences for sharing patient health data", "/" + PROTOTYPE_URL + "/app/index" ) }}
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

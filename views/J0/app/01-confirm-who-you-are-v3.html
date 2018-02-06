@@ -1,0 +1,99 @@
+{% set title = 'Confirm who you are' %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %}
+<script src="/javascripts/radio-checkbox.js"></script>
+<script src="/javascripts/{{PROTOTYPE_URL}}/01-confirm-who-you-are.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <h1 class="page-title">{{title}}</h1>
+
+      <div class="grid-row">
+        <div class="column--three-quarters">
+          <div class="reading-width">
+            <p>For security reasons we must verify who you are before you can set your preferences. To do this you must complete three verification steps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marketing-section marketing-section-grey">
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--one-third">
+          <div class="reading-width">
+            <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
+
+            <h3>1. Enter your details</h3>
+            <p>
+              You enter your details so that we can look for your contact information in our patient database.
+            </p>
+            <p>
+              The information you provide will not be saved.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="column--one-third">
+          <div class="reading-width">
+            <img class="marketing-icon" alt="Phone getting an SMS message" src="/images/verification-method-icon.png">
+
+            <h3>2. Choose your contact method</h3>
+            <p>
+              Using the details we hold in our database, we will send you a one-time verification code to your selected contact method.
+            </p>
+            <p>
+              This will be a mobile number or an email.
+            </p>
+          </div>
+        </div>
+
+        <div class="column--one-third">
+          <div class="reading-width">
+            <img class="marketing-icon" src="/images/lock-icon.png" alt="how your data is kept secure icon">
+            <h3>3. Enter your security code</h3>
+            <p>
+              Once you have chosen your contact method, you will be sent a code which will give you access to set your preference.
+            </p>
+            <p>
+              When you enter your code you will then be able to set your preference online.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--three-quarters">
+          <div class="reading-width">
+            <h2>Start verification process</h2>
+            <p>
+              By continuing you agree to let us search for your details in our database to send you a one-time security passcode.
+            </p>
+            <p>
+              <a href="/{{PROTOTYPE_URL}}/app/02-your-details" role="button" class="button">Accept and continue</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</main>
+{% endblock %}

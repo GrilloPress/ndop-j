@@ -1,0 +1,38 @@
+{% set title = 'Thank you' %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/07-thank-you.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p class="alert alert-success" role="alert" style="display:none;" tabindex="-1">Your preference has been saved.</p>
+              <p>
+                Your patient health information can be used to help improve health and care services for the future.               </p>
+              <p>
+                If you have previously opted out of using your patient health information, it can take up to 21 days before your opt-out is withdrawn.               </p>
+              <p>
+                You can reset your preferences at any time in the future using this service.
+              </p>
+              <p>
+                <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/app/index">Return to start &olarr;</a>
+              </p>
+            </div>
+          </div>
+      </div>
+  </div>
+</main>
+{% endblock %}

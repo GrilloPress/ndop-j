@@ -1,0 +1,56 @@
+{% set title = 'Finding your NHS Number' %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>
+                Everyone registered with the NHS has a unique patient identifier called an NHS Number.
+              </p>
+              <p>
+                An NHS number is a 10 digit number, like 485 777 3456.
+              </p>
+              <p>
+                You should be able to find your NHS Number on any letter or document you have received from the NHS. This includes:</p>
+                <ul>
+                  <li>
+                    prescriptions
+                  </li>
+                  <li>
+                    test results
+                  </li>
+                  <li>
+                    hospital referral or appointment letters
+                  </li>
+                </ul>
+                <p>
+                  If you have a medical card, your NHS number should be printed on it.
+               </p>
+               <p>
+                 If you cannot find your NHS number, there are <a href="/{{PROTOTYPE_URL}}/app/00-other-ways-to-set-your-preferences">other ways to set your preferences instead</a>
+               </p>
+
+               <p><a role="button" class="button" title="Continue Opt-out Process" href="/{{PROTOTYPE_URL}}/app/01-confirm-who-you-are">I have found my NHS number</a></p>
+
+            </div>
+            </div>
+          </div>
+      </div>
+
+  </div>
+
+</main>
+{% endblock %}

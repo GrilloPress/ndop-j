@@ -1,0 +1,125 @@
+{% set title = 'How opting out works - Register your preference for sharing health data' %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% set content_title = "How opting out works" %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+
+    <div class="page-band">
+      <div class="page-section">
+        <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <h1 class="page-title">{{content_title}}</h1>
+      <div class="grid-row">
+        <div class="column--one-third">
+          <ol>
+            <li>
+              <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+            </li>
+            <li>
+              <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+            </li>
+            <li>
+              <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+            </li>
+          </ol>
+        </div>
+        <div class="column--one-third">
+          <ol start="4">
+            <li>
+              <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+            </li>
+            <li>
+              {{content_title}}
+            </li>
+            <li>
+              <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>
+                If you opt-out of sharing your personally identifiable data, details like your name and address will no longer appear in data shared by the NHS.
+              </p>
+
+              <h2 id="the-opt-out-process">The opt-out process</h2>
+
+              <h3>You set an opt-out preference</h3>
+              <p>
+                Use our online service to opt-out of using your data beyond your individual care.
+              </p>
+
+              <h3>Your preference is processed</h3>
+              <p>
+                Our automated IT systems will process this information quickly and securely.
+              </p>
+
+              <h3>We make a record of your preference</h3>
+              <p>
+                This specifies the date your opt-out was received or if it has been withdrawn. So we know when we are able to use data and when we must apply an opt-out preference.
+              </p>
+
+              <h3>We update our full list of current preferences</h3>
+              <p>
+                It can take up to 21 days before your preference can be applied to future data releases.
+              </p>
+
+              <h2 id="where-opt-outs-do-not-apply">Where opt-outs do not apply</h2>
+              <p>
+                There are some circumstances where opt-outs do not apply. In these circumstances, your personally identifiable data will still be used.
+              </p>
+              <ul>
+                <li>
+                  Where the information is used for purposes relating to your individual care
+                </li>
+                <li>
+                  Where the personal confidential information does not contain your NHS number
+                </li>
+                <li>
+                  If you have given consent for your data to be used for a specific reason, like a medical research study
+                </li>
+                <li>
+                  Where data is anonymised which means you cannot be identified from the information
+                </li>
+                <li>
+                  Where there is a legal requirement to provide information, such as an order of court
+                </li>
+                <li>
+                  Where there is an overriding public interest in the disclosure of your data
+                </li>
+                <li>
+                  Where information is used to support the management of communicable diseases and other risks to public health, like meningitis
+                </li>
+                <li>
+                  Where patient registration information is supplied to the Office for National Statistics
+                </li>
+              </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          {{ patterns.page_nav( "Benefits of data sharing", "/" + PROTOTYPE_URL + "/04-benefits-of-data-sharing", "Register your preferences", "/" + PROTOTYPE_URL + "/06-register-your-preference" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

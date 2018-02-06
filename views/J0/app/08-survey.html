@@ -1,0 +1,59 @@
+{% set title = 'Survey' %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/08-survey.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+                <h2 id="error-summary" class="h3">Sorry, to complete the survey you must fix the following errors</h2>
+                <ul class="link-list">
+                  <li>
+                    <a class="error-text" href="#error-message">Incomplete survey</a>
+                  </li>
+                </ul>
+              </div>
+              <p id="survey-message">
+                We’d like to gain a better understanding of your experience here today, so that we can continue to improve this service. Please answer the following question:
+              </p>
+              <p id="thank-you-message" style="display:none;">
+                Thank you for completing the survey. Your response will help us evaluate our digital service.
+              </p>
+              <form class="form" action="javascript:survey();">
+                <div class="form-group form-row">
+                  <h2 class="h3">Did anyone help you today to complete the health data preferences service?</h2>
+                  <span class="form-label__hint">For example a family member or friend</span>
+
+                  <div class="error error-message" id="error-message">
+                    <p class="error-text error-label">Please select an option below</p>
+                    <br />
+                  </div>
+
+                    <input type="radio" name="assisted-journey" value="assisted-journey-yes" id="assisted-journey-yes" />
+                    <label for="assisted-journey-yes" class="form-label form-label--radio multiple-choice--radio">Yes</label>
+                    <br />
+                    <input type="radio" name="assisted-journey" value="assisted-journey-no" id="assisted-journey-no" />
+                    <label for="assisted-journey-no" class="form-label form-label--radio multiple-choice--radio">No</label>
+                </div>
+                <input type="submit" class="button" value="Submit"  />
+              </form>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</main>
+{% endblock %}

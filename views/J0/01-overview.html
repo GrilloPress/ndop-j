@@ -1,0 +1,115 @@
+{% set title = 'Overview - Register your preference for sharing health data' %}
+{% set content_title = "Overview" %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="page-title">{{content_title}}</h1>
+
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>{{content_title}}</li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-third">
+        <ol start="4">
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <p>
+            Whenever you visit an NHS service, care professionals must keep records about you. These records contain your patient health and care information. They also contain personally identifiable data, like your name, postcode and date of birth.
+          </p>
+          <h2 class="h3" id="using-your-data">Using your data</h2>
+          <p>
+            The NHS may use your personally identifiable data in two different ways.
+          </p>
+
+
+          <h2 id="your-individual-care" class="h3">Your individual care</h2>
+          <div class="grid-row">
+            <div class="column--one-third">
+              <img class="data-usage-icon" src="/images/individual_care_icon.svg" height="150" width="auto" />
+            </div>
+            <div class="column--two-thirds">
+              <p>Health and care professionals access your data to see your important health and care information. This may include:</p>
+              <ul>
+                <li>current medical conditions</li>
+                <li>past procedures</li>
+                <li>dietary or allergy requirements</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="research-and-planning" class="h3">Research and planning</h2>
+          <div class="grid-row">
+            <div class="column--one-third">
+              <img class="data-usage-icon" src="/images/research_icon.svg" height="150" width="auto" />
+            </div>
+            <div class="column--two-thirds">
+              <p>Your data is also used to improve the health of future generations. The NHS uses data to:</p>
+              <ul>
+                <li>plan essential facilities like heart units</li>
+                <li>understand the need for specialist care wards</li>
+                <li>research potential cures for life-threatening diseases</li>
+                <li>improve treatment for serious illnesses</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="h3" id="where-you-have-a-choice">Where you have a choice</h2>
+          <p>You can choose how your patient health information is used. If you don't agree with using your patient data for research and planning, you can opt out of this happening. The decision you make will not affect your individual care.</p>
+          <h2 class="h3" id="setting-your-preference">Setting your preference</h2>
+          <p>
+            You may use our online service to set or change your preference at any time. If you do not wish to opt out, you don’t have to do anything at all.
+          </p>
+          <p>
+            <a title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a> or continue reading for more information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          {{ patterns.page_nav( "", "", "Who uses your data", "/" + PROTOTYPE_URL + "/02-who-uses-your-data" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% set title = 'Confirm who you are' %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %}
+<script src="/javascripts/radio-checkbox.js"></script>
+<script src="/javascripts/{{PROTOTYPE_URL}}/01-confirm-who-you-are.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <div class="reading-width">
+                <p>
+                  For security reasons we must verify who you are before you can set your preferences.
+                </p>
+                <p>
+                  By continuing you agree to let us search for your details in our database to send you a one-time security passcode.
+                </p>
+                <p>
+                  <a href="/{{PROTOTYPE_URL}}/app/02-your-details" class="button" role="button">Agree and continue</a>
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,127 @@
+{% set title = 'Who uses your data - Register your preference for sharing health data' %}
+{% set content_title = "Who uses your data" %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %} {% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="page-title">{{content_title}}</h1>
+
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+          </li>
+          <li>{{content_title}}</li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-third">
+        <ol start="4">
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <p>
+            The NHS collects health and care data from a wide variety of NHS trusts and local authorities. Data is also collected from private organisations, such as private hospitals and dentists. Research bodies and organisations can request access to this data. They must meet strict conditions and criteria in order to be considered.
+          </p>
+          <p>
+            Organisations that can request access to data may include:
+          </p>
+          <ul>
+            <li>
+              university researchers
+            </li>
+            <li>
+              hospital researchers
+            </li>
+            <li>
+              royal colleges
+            </li>
+            <li>
+              commercial companies working to improve the NHS
+            </li>
+          </ul>
+
+          <h2 id="how-your-data-is-used" class="h3">How your data is used</h2>
+          <div class="panel">
+            <div class="panel__content panel__content--half">
+              <div class="reading-width">
+                <p>Personally identifiable data will only be used if it is:</p>
+                <ul class="list--check">
+                  <li>used to support the delivery of health and social care services</li>
+                  <li>allowed by law</li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel__content panel__content--half">
+              <div class="reading-width">
+                <p>Access to personally identifiable data will <b>not</b> be given to:</p>
+                <ul class="list--cross">
+                  <li>third party marketing companies</li>
+                  <li>third party insurance companies</li>
+                </ul>
+                <p>(unless you specifically ask us to do so)</p>
+              </div>
+            </div>
+          </div>
+          <h3>Before your data is used</h3>
+          <p>
+            A signed data sharing agreement must be in place between the NHS and the organisation requesting information. This legally protects the data and states the rules on what it can be used for.
+          </p>
+          <p>
+            An agreement for data sharing will include:
+          </p>
+          <ul>
+            <li>
+              the type of data being shared
+            </li>
+            <li>
+              the purpose for sharing data
+            </li>
+            <li>
+              all other data security conditions
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          {{ patterns.page_nav( "Overview", "/" + PROTOTYPE_URL + "/01-overview", "How data is kept secure", "/" + PROTOTYPE_URL + "/03-how-data-is-kept-secure" ) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

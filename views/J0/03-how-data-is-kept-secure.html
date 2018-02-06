@@ -1,0 +1,138 @@
+{% set title = 'How data is kept secure - Register your preference for sharing health data' %}
+{% set content_title = "How data is kept secure" %}
+{% set PROTOTYPE_URL = 'J0' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preference for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="page-title">{{content_title}}</h1>
+
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            {{content_title}}
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-third">
+        <ol start="4">
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+    <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>
+                The NHS takes the responsibility for protecting your personally identifiable data very seriously. Information Governance (IG) across the NHS ensures your data is looked after in accordance with good practice and the law. If an organisation can’t prove it will look after data to IG standards, their request for access will be rejected.
+              </p>
+              <p>
+                To ensure your data is secure:
+              </p>
+              <ul>
+                <li>
+                  individuals with access to data must have appropriate training
+                </li>
+                <li>
+                  technology is used to restrict access and encrypt data
+                </li>
+                <li>
+                  national IT systems are kept up-to-date and relevant
+                </li>
+                <li>
+                  audit trails record every instance that data is viewed or used
+                </li>
+              </ul>
+              <h2 id="our-pledge">Our pledge</h2>
+              <p>
+                When using data for purposes beyond your individual care, the different organisations that make up health and care services are making a pledge to:
+              </p>
+              <div class="panel">
+                <div class="panel__content panel__content--half">
+                    <div class="reading-width">
+                        <ul>
+                          <li>
+                            take every step to keep data secure
+                          </li>
+                          <li>
+                            use anonymised data whenever we can
+                          </li>
+                          <li>
+                            give you a choice about using personally identifiable data whenever we can
+                          </li>
+                          <li>
+                            never use or share personally identifiable data for marketing or insurance purposes (unless you specifically tell us that you want us to)
+                          </li>
+                          <li>
+                            make it clear on our website what we use data for, who we share information with and why
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel__content panel__content--half">
+                  <div class="reading-width">
+                    <ul>
+                      <li>
+                        only use personally identifiable data to benefit health and care
+                      </li>
+                      <li>
+                        use minimum information where possible e.g. removing your name and using your NHS number instead
+                      </li>
+                      <li>
+                        respect your decision if you opt out of personally identifiable data being used beyond your individual care
+                      </li>
+                      <li>
+                        only use information about you, where allowed by the law and where there has been independent scrutiny and approval
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="column--one-third">
+
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="reading-width">
+        <div class="grid-row">
+          <div class="column--two-thirds">
+            {{ patterns.page_nav( "Who uses your data", "/" + PROTOTYPE_URL + "/02-who-uses-your-data", "Benefits of data sharing", "/" + PROTOTYPE_URL + "/04-benefits-of-data-sharing" ) }}
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+
+{% endblock %}
