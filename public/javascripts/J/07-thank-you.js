@@ -12,10 +12,12 @@ function thankYouMessage() {
   // This is now an ugly hack...
 
   if ( pref == "true" ) {
+    console.log("true");
     $( "#shared" ).removeClass( "util-visuallyhidden" );
 
   } else {
-    $( "#not-shared" ).removeClass( "util-visuallyhidden" )
+    console.log("false");
+    $( "#not-shared" ).removeClass( "util-visuallyhidden" );
   }
 
 };
