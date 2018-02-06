@@ -1,5 +1,24 @@
 var PROTOTYPE_URL = "/J";
 
+$(window).load( function() {
+
+  $( 'form' ).change( function() {
+
+    $( 'input[name="assisted-journey"]:checked' ).each( function () {
+
+      $(this).parent().addClass( "checked" );
+
+    })
+
+    $( 'input[name="assisted-journey"]:not(:checked)' ).each( function () {
+
+      $(this).parent().removeClass( "checked" );
+
+    })
+
+  })
+});
+
 function survey(){
 
   // get form value
@@ -33,8 +52,8 @@ function saveResponse(response) {
 
   localStorage.surveyResponse = response;
   $(" .error-summary ").removeClass( 'error-message-active' );
-  $('.form, p#survey-message').fadeOut("slow", function(){
-    $('p#thank-you-message').fadeIn();
+  $('.form, #survey-message').fadeOut("slow", function(){
+    $('#thank-you-message').fadeIn();
   });
 
 }

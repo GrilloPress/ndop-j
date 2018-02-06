@@ -29,9 +29,15 @@
               <p id="survey-message">
                 We’d like to gain a better understanding of your experience here today, so that we can continue to improve this service. Please answer the following question:
               </p>
-              <p id="thank-you-message" style="display:none;">
-                Thank you for completing the survey. Your response will help us evaluate our digital service.
-              </p>
+              <div id="thank-you-message" style="display:none;">
+                <p>
+                  Thank you for completing the survey.
+                </p>
+                <p>
+                  Your response will help us evaluate our online service.
+                </p>
+              </div>
+
               <form class="form" action="javascript:survey();">
                 <div class="form-group form-row">
                   <h2 class="h3">Did anyone help you today to complete the health data preferences service?</h2>
@@ -42,11 +48,9 @@
                     <br />
                   </div>
 
-                    <input type="radio" name="assisted-journey" value="assisted-journey-yes" id="assisted-journey-yes" />
-                    <label for="assisted-journey-yes" class="form-label form-label--radio multiple-choice--radio">Yes</label>
-                    <br />
-                    <input type="radio" name="assisted-journey" value="assisted-journey-no" id="assisted-journey-no" />
-                    <label for="assisted-journey-no" class="form-label form-label--radio multiple-choice--radio">No</label>
+                    <label for="assisted-journey-yes" class="form-label form-label--radio multiple-choice--radio lg"><input type="radio" name="assisted-journey" value="assisted-journey-yes" id="assisted-journey-yes" /> Yes</label>
+
+                    <label for="assisted-journey-no" class="form-label form-label--radio multiple-choice--radio lg"><input type="radio" name="assisted-journey" value="assisted-journey-no" id="assisted-journey-no" /> No</label>
                 </div>
                 <input type="submit" class="button" value="Submit"  />
               </form>
