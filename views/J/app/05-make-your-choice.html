@@ -31,27 +31,33 @@
             </div>
 
             <p>
-              There are two reasons why your personally identifiable data may be used. The first reason is for your individual care and for your own medical records.
+              Your personally identifiable data can be used for improving health, care and services, including:
             </p>
+            <ul>
+              <li>planning to improve health and care services</li>
+              <li>
+                research to find a cure for serious illnesses
+              </li>
+            </ul>
+
             <p>
-              The second reason for using your data is to help the NHS research, plan and improve health and social care services for you and your family.
-            </p>
-            <p>
-              If you don't agree with using your data for the second reason, you can opt-out of this. Your decision will not affect your individual care and you can change your mind anytime you like.
+              Your decision will not affect your individual care and you can change your mind anytime you like.
             </p>
 
             <form class="form" action="javascript:confirmAll();">
                 <div id="single-question" class="form-group form-row util-no-margin">
-                  <h2 class="h3">I want to stop using my data beyond my individual care</h2>
+                  <h2 class="h3">I allow my data to be used for research and planning:</h2>
                   <div id="single-question-input-error" class="error error-message">
                     <p class="error-text">Please select your preference</p>
                   </div>
 
-                  <label for="single-opted-out" class="form-label form-label--radio multiple-choice--radio lg"> <input type="radio" name="single-pref" id="single-opted-out" value="single-opted-out" class=""> Yes
+                  <label for="single-opted-in" class="form-label form-label--radio multiple-choice--radio lg"> <input type="radio" name="single-pref" id="single-opted-in" value="single-opted-in" class="multiple-choice--radio"> Yes
                   </label>
 
-                  <label for="single-opted-in" class="form-label form-label--radio multiple-choice--radio lg"> <input type="radio" name="single-pref" id="single-opted-in" value="single-opted-in" class="multiple-choice--radio"> No
+                  <label for="single-opted-out" class="form-label form-label--radio multiple-choice--radio lg"> <input type="radio" name="single-pref" id="single-opted-out" value="single-opted-out" class=""> No
                   </label>
+
+
                 </div>
               <input id="submit-pref" class="button" type="submit" name="submit-pref" value="Continue">
             </form>
