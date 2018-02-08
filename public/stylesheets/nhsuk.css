@@ -2094,6 +2094,9 @@ p {
     margin: 0; }
     .callout--interruption .link-list.no-margin li {
       margin: 0; }
+  .callout--interruption.alt {
+    background-color: #00407d  !important;
+    color: white !important; }
 
 .callout--muted {
   background-color: #d8dde0; }
