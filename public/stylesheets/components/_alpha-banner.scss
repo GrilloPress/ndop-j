@@ -1,6 +1,6 @@
 .banner {
 
-  background-color: #f6a623;
+  background-color: #f9b905;
   color: #000;
   @include core-font(16);
   font-weight: 400;
@@ -11,7 +11,7 @@
     span {
 
       padding: 1px 5px;
-      color: #f6a623;
+      color: #f9b905;
       background-color: #000;
 
     }
@@ -25,7 +25,7 @@
 
     &:hover {
 
-      color: #f6a623;
+      color: #f9b905;
       padding: 1px 5px;
       background-color: #000;
 
