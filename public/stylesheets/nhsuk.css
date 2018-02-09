@@ -2094,9 +2094,17 @@ p {
     margin: 0; }
     .callout--interruption .link-list.no-margin li {
       margin: 0; }
+  .callout--interruption .link-list.no-margin-li {
+    margin: 1em 0; }
+    .callout--interruption .link-list.no-margin-li li {
+      margin: 0; }
   .callout--interruption.alt {
-    background-color: #00407d  !important;
-    color: white !important; }
+    background-color: #003087;
+    color: white; }
+    .callout--interruption.alt .number-circle {
+      color: #231f20;
+      background-color: white;
+      border: 1px solid; }
 
 .callout--muted {
   background-color: #d8dde0; }
