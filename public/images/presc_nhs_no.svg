@@ -60,7 +60,7 @@
                 <path d="M91,47.1152416 L116.352295,47.1152416" id="Line-2" stroke="#425563" stroke-width="2" stroke-linecap="square"></path>
             </g>
             <g id="Group-5" transform="translate(41.000000, 21.000000)">
-                <polygon id="Triangle" fill-opacity="0.496150362" fill="#4A4A4A" transform="translate(80.066859, 71.443764) rotate(246.000000) translate(-80.066859, -71.443764) " points="128.683301 62.9135142 74.9230078 136.947836 31.4504178 5.93969191"></polygon>
+                <polygon id="Triangle" fill-opacity="0.496150362" fill="#425563" transform="translate(80.066859, 71.443764) rotate(246.000000) translate(-80.066859, -71.443764) " points="128.683301 62.9135142 74.9230078 136.947836 31.4504178 5.93969191"></polygon>
                 <g id="Group" transform="translate(41.000000, 48.000000)">
                     <circle id="Oval" stroke="#979797" stroke-width="4" fill="#D8FBE0" cx="89.5" cy="89.5" r="89.5"></circle>
                     <text id="485-777-3456" font-family="FrutigerLTStd-Bold, Frutiger LT Std" font-size="24" font-weight="bold" fill="#425563">
@@ -68,7 +68,7 @@
                     </text>
                     <polygon id="Rectangle-3" fill="#FFFFFF" points="119 108 179.524647 108 168 132.5 155 151.5 119 174.5"></polygon>
                     <polygon id="Rectangle-4" fill="#9EED91" points="162.5 108 178.587441 108 178.5 109 162.5 142.5"></polygon>
-                    <circle id="Oval" stroke="#979797" stroke-width="4" cx="89.5" cy="89.5" r="89.5"></circle>
+                    <circle id="Oval" stroke="#425563" stroke-width="4" cx="89.5" cy="89.5" r="89.5"></circle>
                 </g>
             </g>
         </g>

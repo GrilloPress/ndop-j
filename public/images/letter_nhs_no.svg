@@ -33,12 +33,12 @@
                 </g>
             </g>
             <g id="Group-3" transform="translate(2.000000, 33.000000)">
-                <polygon id="Triangle" fill-opacity="0.496150362" fill="#4A4A4A" transform="translate(138.167462, 81.841281) rotate(109.000000) translate(-138.167462, -81.841281) " points="70.3445831 30.2806149 205.990342 27.9941031 140.483276 135.688459"></polygon>
+                <polygon id="Triangle" fill-opacity="0.496150362" fill="#425563" transform="translate(138.167462, 81.841281) rotate(109.000000) translate(-138.167462, -81.841281) " points="70.3445831 30.2806149 205.990342 27.9941031 140.483276 135.688459"></polygon>
                 <circle id="Oval" stroke="#979797" stroke-width="2" fill="#FFFFFF" cx="84" cy="149" r="84"></circle>
                 <text id="485-777-3456" font-family="FrutigerLTStd-Bold, Frutiger LT Std" font-size="26" font-weight="bold" fill="#425563">
                     <tspan x="7" y="155">485 777 3456</tspan>
                 </text>
-                <circle id="Oval" stroke="#979797" stroke-width="4" cx="84" cy="149" r="84"></circle>
+                <circle id="Oval" stroke="#425563" stroke-width="4" cx="84" cy="149" r="84"></circle>
             </g>
         </g>
     </g>
